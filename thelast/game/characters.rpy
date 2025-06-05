@@ -10,6 +10,7 @@ define N = Character("Nara", color="#CC6600")
 define B = Character("Ben", color="#993300")
 define RL = Character("Rilandy", color="#6666FF")
 
+
 init python:
     store.character_profiles = {
         "Raka": {
