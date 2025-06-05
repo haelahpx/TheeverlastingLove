@@ -2,6 +2,43 @@
 image auditorium = im.Scale("bg/auditorium.jpg", 1920, 1080)
 
 
+# Transformasi untuk karakter kiri (pojok kiri atas dialog box)
+transform left_terang:
+    xpos 0.0
+    ypos 0.7
+    xanchor 0.06
+    yanchor 0.9
+    alpha 1.0
+    linear 0.2 alpha 1.0
+
+transform left_redup:
+    xpos 0.0
+    ypos 0.7
+    xanchor 0.06
+    yanchor 0.9
+    alpha 0.4
+    linear 0.2 alpha 0.4
+
+# Transformasi untuk karakter kanan (pojok kanan atas dialog box)
+transform right_terang:
+    xpos 1.0
+    ypos 0.3
+    xanchor 0.95
+    yanchor 0.22
+    alpha 1.0
+    linear 0.2 alpha 1.0
+
+transform right_redup:
+    xpos 1.0
+    ypos 0.3
+    xanchor 0.95
+    yanchor 0.22
+    alpha 0.4
+    linear 0.2 alpha 0.4
+
+
+
+
 label start:
     scene auditorium
     with fade
@@ -12,7 +49,8 @@ label start:
     $ profile_luna = store.character_profiles["Luna"]
     $ profile_nara = store.character_profiles["Nara"]
 
-    show raka normal
+    show raka normal at left_terang
+    with dissolve
     R "Hari ini adalah hari pertamaku masuk SMA."
     R "Aku kepikiran deh, aku bisa ga ya cepat beradaptasi dan dapat teman baru? Hm…"
 
@@ -98,7 +136,7 @@ label kantin_duduk:
 
 
 label versi_luna:
-    show diego normal at left
+    show diego normal at left 
     R "Tadi ada cewe rambutnya pirang, cantik banget… ramah dan ceria gitu orangnya, seolah-olah punya banyak energi seharian."
     show mila normal at left
     M "Oh iya? Kayaknya tadi aku lihat deh, emang cantik banget tuh.."

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 72: expected 'image_name_component' not found.
-    show 
-         ^
+File "game/script.rpy", line 114: style statement expects a non-empty block.
+    style unlock_card_frame: 
+                            ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Thu Jun  5 08:10:15 2025
+Thu Jun  5 11:32:12 2025
