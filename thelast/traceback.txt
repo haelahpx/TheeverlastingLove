@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 56, in script
+    show diego happy at left
+Exception: Image 'diego' does not accept attributes 'happy'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 56, in script
+    show diego happy at left
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1087, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'diego' does not accept attributes 'happy'.
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.7.25031702
+thelast 1.0
+Thu Jun  5 08:07:28 2025
