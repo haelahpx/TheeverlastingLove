@@ -70,14 +70,14 @@ init python:
 
 # Image declarations (default 'normal' expression)
 image raka normal = im.Scale("characters/Raka_Normal.png", 420, 420)
-image raka kaget = "images/characters/Raka_Kaget.png"
+image raka kaget = im.Scale("characters/Raka_Kaget.png", 420, 420)
 
 image luna normal = im.Scale("characters/Luna_Normal.png", 420, 420)
-image nara normal = "images/characters/Nara_Normal.png"
+image nara normal = im.Scale("characters/Nara_Normal.png", 420, 420)
 
-image diego normal = "images/characters/Diego.png"
-image arga normal = "images/characters/Arga.png"
-image mila normal = "images/characters/Mila.png"
-image tiffany normal = "images/characters/Tiffany.png"
-image ben normal = "images/characters/Ben.png"
-image rilandy normal = "images/characters/Rilandy.png"
+image diego normal = im.Scale("characters/Diego.png", 420, 420)
+image arga normal = im.Scale("characters/Arga.png", 420, 420)
+image mila normal = im.Scale("characters/Mila.png", 420, 420)
+image tiffany normal = im.Scale("characters/Tiffany.png", 420, 420)
+image ben normal = im.Scale("characters/Ben.png", 420, 420)
+image rilandy normal = im.Scale("characters/Rilandy.png", 420, 420)

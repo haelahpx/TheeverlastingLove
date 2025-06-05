@@ -1,5 +1,7 @@
 ﻿
 image auditorium = im.Scale("bg/auditorium.jpg", 1920, 1080)
+image bg_kantin_gate = im.Scale("bg/bg_kantin_gate.jpg", 1920, 1080)
+image bg_kantin_table = im.Scale("bg/bg_kantin_gate.jpg", 1920, 1080)
 
 
 # Transformasi untuk karakter kiri (pojok kiri atas dialog box)
