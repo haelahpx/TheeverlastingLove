@@ -9,6 +9,7 @@ define t = Character("Tiffany", color="#FF3399")
 define n = Character("Nara", color="#CC6600")
 define b = Character("Ben", color="#993300")
 define rl = Character("Rilandy", color="#6666FF")
+define npc = Character("npc", color="#6666FF")
 
 
 init python:

@@ -1,26 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 132, in script call
-    call unlock_character("Nara", "Anggota OSIS yang kalem dan berwibawa.", "card nara")
-  File "game/script.rpy", line 132, in script call
-    call unlock_character("Nara", "Anggota OSIS yang kalem dan berwibawa.", "card nara")
-ScriptError: could not find label 'unlock_character'.
+  File "game/script.rpy", line 493, in script
+    npc "Yah kamu telat! Sudah tidak bisa."
+Exception: Sayer 'npc' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 132, in script call
-    call unlock_character("Nara", "Anggota OSIS yang kalem dan berwibawa.", "card nara")
-  File "C:\renpy\renpy-8.3.7-sdk\renpy\ast.py", line 1427, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/script.rpy", line 132, in script call
-    call unlock_character("Nara", "Anggota OSIS yang kalem dan berwibawa.", "card nara")
-  File "C:\renpy\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'unlock_character'.
+  File "game/script.rpy", line 493, in script
+    npc "Yah kamu telat! Sudah tidak bisa."
+  File "C:\renpy\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "C:\renpy\renpy-8.3.7-sdk\renpy\ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\renpy\renpy-8.3.7-sdk\renpy\ast.py", line 472, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'npc' is not defined.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 thelast 1.0
-Fri Jun  6 14:15:01 2025
+Sat Jun 14 17:36:26 2025

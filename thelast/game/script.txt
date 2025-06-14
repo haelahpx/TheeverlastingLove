@@ -1,4 +1,4 @@
-﻿default luna_hearts = 0
+default luna_hearts = 0
 default nara_hearts = 0
 
 default unlocked_luna = False
@@ -92,7 +92,6 @@ label profile:
     $ profile_Mila = store.character_profiles["Mila"]
     $ profile_Ben = store.character_profiles["Ben"]
     $ profile_Rilandy = store.character_profiles["Rilandy"]
-    $ profile_npc = store.character_profiles["npc"]
 
 label unlock_character(char_name, char_desc, char_image):
     call screen character_card(char_name, char_desc, char_image)
@@ -452,8 +451,6 @@ label scene_4b:
     hide raka normal
     hide mila normal
 
-    jump scene_6
-
 label scene_5:
     "Bell sekolah telah berbunyi, menandakan sudah tiba saatnya pulang sekolah. Sebelum bergegas pulang ke rumah, Raka menyempatkan diri mengunjungi kelas Nara untuk meminjam buku novelnya yang sudah dijanjikan."
     show raka normal at left
@@ -490,10 +487,6 @@ label scene_5:
     r "iya kak. hati hati ya.. Oh iya, makasih juga bukunya."
     n "Oh, tenang aja!"
     r "(Yah, padahal tadi seru kalau pergi bareng sambil ngobrolin novel plutonya Mila.)"
-
-    hide arga normal
-    hide raka normal
-    hide nara normal
 
 label scene_6:
     r "Pak tunggu! Jangan ditutup gerbangnya!"
@@ -675,6 +668,7 @@ label scene_6b_cari_jalan:
     r "Kalian bertemu dimana?"
     l "Kebetulan orang tua kami berteman, dan kami tinggal di komplek yang sama. Lalu kami juga selalu pergi ke sekolah yang sama."
     l "Tapi, disaat masuk SMA ini aku ga tahu kabar Ben sekolah dimana. Dan ternyata kita satu sekolah lagi."
+    # NEW CHARACTER UNLOCK (Ben)
     $ unlocked_ben = True
     call unlock_character("Ben", "Teman masa kecil Luna yang usil dan ceria.", "card ben")
 
