@@ -72,7 +72,9 @@ init python:
 
 
 image raka normal = im.Scale("characters/Raka_Normal.png", 420, 420)
+image raka normal mirror = im.Scale("characters/Raka_Normal_Mirror.png", 420, 420)
 image raka kaget = im.Scale("characters/Raka_Kaget.png", 420, 420)
+image raka kaget mirror = im.Scale("characters/Raka_Kaget_Mirror.png", 420, 420)
 image raka mikir = "images/characters/raka_mikir.png"
 
 image luna normal = im.Scale("characters/Luna_Normal.png", 420, 420)

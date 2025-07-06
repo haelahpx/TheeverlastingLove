@@ -48,35 +48,35 @@ image bg_kantin_table = im.Scale("bg/bg_kantin_gate.jpg", 1920, 1080)
 
 # Transformasi untuk karakter kiri (pojok kiri atas dialog box)
 transform left_terang:
-    xpos 0.0
-    ypos 0.7
-    xanchor 0.06
-    yanchor 0.9
+    xpos 0.09
+    ypos 1.0
+    xanchor 0.5
+    yanchor 1.0
     alpha 1.0
     linear 0.2 alpha 1.0
 
 transform left_redup:
-    xpos 0.0
-    ypos 0.7
-    xanchor 0.06
-    yanchor 0.9
+    xpos 0.09
+    ypos 1.0
+    xanchor 0.5
+    yanchor 1.0
     alpha 0.4
     linear 0.2 alpha 0.4
 
 # Transformasi untuk karakter kanan (pojok kanan atas dialog box)
 transform right_terang:
-    xpos 1.0
-    ypos 0.3
-    xanchor 0.95
-    yanchor 0.22
+    xpos 0.89
+    ypos 1.0
+    xanchor 0.5
+    yanchor 1.0
     alpha 1.0
     linear 0.2 alpha 1.0
 
 transform right_redup:
-    xpos 1.0
-    ypos 0.3
-    xanchor 0.95
-    yanchor 0.22
+    xpos 0.89
+    ypos 1.0
+    xanchor 0.5
+    yanchor 1.0
     alpha 0.4
     linear 0.2 alpha 0.4
 
@@ -103,7 +103,7 @@ label start:
 
     play music "bgm/videoplayback.m4a"
 
-    show raka normal at left_terang
+    show raka normal mirror at left_terang
     with dissolve
     r "Hari ini adalah hari pertamaku masuk SMA."
     r "Aku kepikiran deh, aku bisa ga ya cepat beradaptasi dan dapat teman baru? Hm…"
@@ -111,25 +111,43 @@ label start:
     play sound "footstep.ogg"
 
     show luna normal at right with moveinright
+    show raka normal mirror at left_redup
     l "Hai!"
 
-    show raka kaget at center
+    hide raka normal mirror at left
+    show raka kaget mirror at left_terang
+    show luna normal at right_redup
     r "(kaget)"
     r "(dalam hati) Wah! Dia siapa? Cantik banget… Ceria, penuh semangat dan ramah banget…"
-    show raka normal at center
+
+    show raka normal mirror at left_terang
+    show luna normal at right_redup
     r "Oh! Hai?"
 
+    show luna normal at right_terang
+    show raka normal mirror at left_redup
     l "Boleh kenalan ga? Nama kamu siapa?"
+
+    show raka normal mirror at left_terang
+    show luna normal at right_redup
     r "Eh- boleh… aku Raka."
     r "Kalau nama kamu?"
+
+    show luna normal at right_terang
+    show raka normal mirror at left_redup
     l "Luna! Namaku Luna…"
 
     play sound "mic_test.ogg"
 
     show nara normal at right
+    hide raka normal at left
+    hide luna normal at right 
     n "Test, test, test…"
-    n "Halo semuanya, nama saya Nara sebagai perwakilan dari OSIS. Ada pemberitahuan, bagi peserta didik baru SMA Harapan Bangsa, di mohon untuk mencatat informasi yang tertera di mading sekolah sebagai arahan mengenai kegiatan MPLS sekolah kami."
+    n "Halo semuanya, nama saya Nara sebagai perwakilan dari OSIS."
+    n "Ada pemberitahuan, bagi peserta didik baru SMA Harapan Bangsa, di mohon untuk mencatat informasi yang tertera di mading sekolah sebagai arahan mengenai kegiatan MPLS sekolah kami."
 
+    show raka normal mirror at left_terang
+    hide nara normal at right
     r "(dalam hati) Wah, kakak itu... bisa banget bawa diri. Udah keren, kalem, cantik pula. Komplit banget sih."
     if not unlocked_nara:
         $ unlocked_nara = True
