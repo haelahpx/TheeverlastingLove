@@ -1,26 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/characters.rpy", line 77, in script
-    image raka kaget mirror = im.Scale("characters/Raka_Kaget_Mirror.png", 420)
-  File "game/characters.rpy", line 77, in <module>
-    image raka kaget mirror = im.Scale("characters/Raka_Kaget_Mirror.png", 420)
-TypeError: __init__() missing 1 required positional argument: 'height'
+  File "game/script.rpy", line 273, in script
+    show mila mirror at left_terang
+Exception: Image 'mila' does not accept attributes 'mirror'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/characters.rpy", line 77, in script
-    image raka kaget mirror = im.Scale("characters/Raka_Kaget_Mirror.png", 420)
-  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\ast.py", line 933, in execute
-    img = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/characters.rpy", line 77, in <module>
-    image raka kaget mirror = im.Scale("characters/Raka_Kaget_Mirror.png", 420)
-TypeError: __init__() missing 1 required positional argument: 'height'
+  File "game/script.rpy", line 273, in script
+    show mila mirror at left_terang
+  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\ast.py", line 1087, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'mila' does not accept attributes 'mirror'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.7.25031702
 thelast 1.0
-Mon Jul  7 00:26:33 2025
+Mon Jul  7 05:41:58 2025

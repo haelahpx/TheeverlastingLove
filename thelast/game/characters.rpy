@@ -90,6 +90,7 @@ image diego kecewa = "images/characters/diego_kecewa.png"
 image arga normal = im.Scale("characters/Arga.png", 420, 420)
 
 image mila normal = im.Scale("characters/Mila.png", 420, 420)
+image mila normal mirror = im.Scale("characters/Mila_Mirror.png", 420, 420)
 image mila sinis = "images/characters/mila_sinis.png"
 
 image tiffany normal = im.Scale("characters/Tiffany.png", 420, 420)

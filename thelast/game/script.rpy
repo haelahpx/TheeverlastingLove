@@ -163,16 +163,20 @@ label scene_2:
 
     "Raka berjalan menuju arah kantin sekolahnya dan mencari kedua sahabatnya yang selalu bersama sejak SMP hingga saat ini."
     "Kedua sahabatnya ini sudah menjalin hubungan asmara bersama sejak SMP hingga saat ini."
-    show raka normal at left
+    
     play sound "shout.ogg"
+
+    show diego normal at right_terang
     d "Rakaaa!"
+
+    show mila normal at right_terang
+    hide diego normal at right
     m "Siniiii!"
+
+    show raka normal mirror at left_terang
+    hide diego normal at right
+    hide mila normal at right
     r "Eh- itu mereka."
-
-    show raka normal at left
-    show diego normal at center
-    show mila normal at right
-
     r "Diegoo! Milaa!"
 
     jump scene_2a
@@ -181,25 +185,34 @@ label scene_2a:
     scene bg_kantin_table with fade
 
     "Raka, Diego dan Mila berjalan menuju meja makan kantin untuk melanjutkan percakapan mereka."
-    show mila normal at left
+
+    show mila normal at right_terang
     m "Gimana hari pertama kamu Raka?"
-    hide mila normal
-    show raka normal at left
+
+    show raka normal mirror at left_terang
+    show mila normal at right_redup
     r "Biasa aja sih, gaada yang seru."
-    hide raka normal
-    show mila normal at left
+
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Ah iya? Kok gitu sih…"
+
     hide mila normal
-    show diego normal at left
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Masa sih? Ga ada ketemu cewek gitu?"
+
     hide diego normal
-    show mila normal at left
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Diego! Apaansih."
     hide mila normal
-    show raka normal at left
+    show raka normal mirror at left_terang
     r "Eh- hehehe… Ada sih…"
+
     hide raka normal
-    show diego normal at left
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Hah? Serius? Siapa?!"
 
     menu:
@@ -211,46 +224,146 @@ label scene_2a:
             jump scene_2b_rahasia
 
 label scene_2b_luna:
-    show diego normal at left 
+    show raka normal mirror at left_terang
+    show diego normal at right_redup
     r "Tadi ada cewe rambutnya pirang, cantik banget… ramah dan ceria gitu orangnya, seolah-olah punya banyak energi seharian."
-    show mila normal at left
+    
+    hide diego normal 
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Oh iya? Kayaknya tadi aku lihat deh, emang cantik banget tuh.."
+
+    hide mila normal
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Eh- emang ada? Kok aku ga liat sih..." 
+
     "Diego tampak agak sedikit kecewa."
+
+    hide diego normal 
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Kenapa kecewa gitu mukanya?! Dih cantik dikit langsung gitu." 
+
+    hide mila normal 
+    show raka normal mirror at left_terang
     r "Udah-udah jangan berantem, mau aku lanjutin ga nih ceritanya?"
+
+    hide mila normal
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Siapa namanya?"
+
+    hide diego normal 
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Kenapa harus ditanya?" 
     "Mila menatap Diego dengan sinis."
+
+    hide mila normal
+    show raka normal mirror at left_terang
     r "Namanya Luna."
+
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Namanya cantik deh…"
+
+    hide raka normal mirror
+    show diego normal at right_redup
+    show mila normal mirror at left_terang
     m "Ribut yuk?"
+    
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Ah sudahlah..."
     jump scene_2c
 
 label scene_2b_nara:
+
+    show raka normal mirror at left_terang
+    show diego normal at right_redup
     r "Kalian lihat ga sih cewe yang kasih pengumuman di auditorium tadi?"
+
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Oh... itu! aku merhatiin dia tadi, yang tinggi dan cantik itu kan?"
+
+    hide raka normal mirror
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Merhatiin banget nih, kayakya sampai detail begitu."
+
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Oh ya.. jelas! dia cantik banget sih emang…"
+
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Terserah deh." 
     "Mila menatap Diego dengan sinis."
+
+    hide diego normal
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Udah-udah jangan berantem, mau aku lanjutin ga nih ceritanya?"
+
+    show mila normal mirror at left_terang
+    show raka normal at right_redup
     m "Siapa namanya?"
+
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Aku gatau sih belum kenalan…"
+
+    hide raka normal
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Masa gatau sih... Nama dia Nara, perwakilan dari OSIS."
+
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Kok kamu tau sih?! Raka aja gatau, kok kamu bisa tahu?!"
+
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Kan tadi dia ngasih tau di depan. Gimana sih?"
+
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Oh iya, kan kamu merhatiin dia banget. Si paling perhatian." 
+
+    hide diego normal
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Ah sudahlah..."
     jump scene_2c
 
 label scene_2b_rahasia:
+    
+    show raka normal mirror at left_terang
+    show diego normal at right_redup
     r "Rahasia!."
+
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Yah kenapa? Kasih tau dong!"
+
+    hide raka normal mirror
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Diego apaansi. Itukan privasi dia, biarin aja. Lagi pula, kenapa sih pengen tau banget?"
+
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Aku penasaran siapa ceweknya."
+
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Giliran cewek aja cepet."
+
+    hide diego normal
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Ah sudahlah..."
     jump scene_2c
 
