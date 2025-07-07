@@ -16,6 +16,7 @@ screen character_card(char_name, char_desc, char_image):
         xalign 0.5 yalign 0.5
         vbox:
             spacing 15 xalign 0.5
+            
             text "KARAKTER BARU TERBUKA" size 40 xalign 0.5
             add char_image xalign 0.5
             text char_name size 35 xalign 0.5
@@ -381,9 +382,15 @@ label scene_3:
 
     "MPLS sudah selesai. Peserta didik sudah memulai aktivitas sekolah seperti biasa. Kelas akan segera dimulai."
 
-    show raka normal
+    show raka normal mirror at left_terang
     r "ini gurunya mana sih kok gaada? Telat kali ya…"
+
+    show luna normal at right_terang
+    show raka normal mirror at left_redup
     l "(Luna berbincang dengan temannya dan ada sound effect suara percakapan)"
+
+    show raka normal mirror at left_terang
+    show luna normal at right_redup
     r "Eh- itu luna bukan ya?"
 
     menu:
@@ -393,37 +400,48 @@ label scene_3:
             jump scene_3b
 
 label scene_3a:
-    show raka normal at left
+    show raka normal mirror at left_terang
     r "Luna..."
-    show luna normal at right
+
+    show luna normal at right_terang
+    show raka normal mirror at left_redup
     l "Eh- iya kenapa raka?"
+
+    show raka normal mirror at left_terang
+    show luna normal at right_redup
     r "Gapapa sih, manggil aja."
+
+    show luna normal at right_terang
+    show raka normal mirror at left_redup
     l "Eh? Gitu doang...? Hehe, kirain kenapa."
     l "Raka kenapa ya? Tiba-tiba manggil…"
-    show ben normal at center
-    show tiffany normal at right
+
+    hide raka normal mirror
+    hide luna normal
+    show tiffany normal at right_terang
     t "Halo anak-anak maaf ibu baru datang, selamat ya..bagi kalian yang keterima di SMA harapan bangsa, di kelas ini ibu sebagai wali kelas kalian. Kenalin nama ibu, Ibu Tiffany."
 
-    hide raka normal 
-    hide luna normal 
-    hide ben normal
+    hide tiffany normal
     jump scene_4
 
 label scene_3b:
-    show raka normal at left
+    show raka normal mirror at left_terang
     r "Kenapa ga aku panggil aja ya tadi? Siapa tau dia notice aku."
     r "Mungkin belum saatnya. Semoga nanti masih ada kesempatan ngobrol."
-    show tiffany normal at right
+
+    show tiffany normal at right_terang
+    show raka normal mirror at left_redup
     t "Halo anak-anak maaf ibu baru datang, selamat ya..bagi kalian yang keterima di SMA harapan bangsa, di kelas ini ibu sebagai wali kelas kalian. Kenalin nama ibu, Ibu Tiffany."
 
-    hide raka normal 
+    hide raka normal mirror
     hide tiffany normal
 
     jump scene_4
 
 label scene_4:
     "Jam istirahat telah tiba, Raka berjalan menuju kantin dan melalui ruang perpustakaan."
-    show raka normal at left
+
+    show raka normal mirror at left_terang
     r "hm… udah istirahat nih, pengen ke kantin sih.. Tapi belum ada teman, aku sama Diego dan Mila aja deh.."
     r "Eh- itu bukannya kakak kelas yang tadi ya?.. Siapa namanya.. Oh iya Nara! Aku sapa ga ya?"
 
@@ -434,12 +452,28 @@ label scene_4:
             jump scene_4a_gasapa
 
 label scene_4a_sapa:
+
+    show raka normal mirror at left_terang
     r "Halo… kak Nara ya? Yang tadi di auditorium."
-    show nara normal at right
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Iya. Kenapa ya?"
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Kenalin kak, Aku Raka dari kelas 10 MIPA 5. Kalau kakak kelas apa?"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Oh, aku 11 MIPA 5."
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Wah! sama dong, kakak lagi apa disini?"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Oh, aku cuman mau baca novel sih."
 
     menu:
@@ -451,31 +485,75 @@ label scene_4a_sapa:
             jump scene_4a_sapa_v3
 
 label scene_4a_sapa_v1:
+
+    show nara normal at right_terang
     n "iya, kamu baca novel?"
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Baru-baru ini sih kak, Ada rekomendasi ga ka?"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Kamu sukanya genre apa?"
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Biasanya baca nya romance sih kak."
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Oh aku tahu yang bagus nih, love in bekasi"
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Oh iya, aku juga pernah denger juga"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Nah itu, seru! Cobain deh.."
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Kalau kakak sukanya genre apa?"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Aku sukanya fantasy."
     n "Tapi kadang juga baca self development sih."
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Wah! fantasy pasti kakaknya baca series Pluto dari Tiro Lio"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Iya! Kamu bener."
     n "Aku koleksi semua seriesnya!"
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Aku masih penasaran banget soalnya."
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "boleh tapi aku ga bawa bukunya, gimana kalau nanti kamu ke kelas aku aja sepulang sekolah?"
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "boleh banget tuh kak!"
     r "Oke kak, aku duluan ya.. Udah ditunggu temen soalnya"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Aku tunggu ya..."
 
     hide nara normal
-    hide raka normal
+    hide raka normal mirror
 
     "Raka menuju kantin dimana Diego dan Mila sedang istirahat bersama."
-    show raka normal at left
-    show diego normal at right
+
+    show diego normal at right_terang
     d "kok lama banget sih keluarnya?"
 
     menu:
@@ -485,146 +563,362 @@ label scene_4a_sapa_v1:
             jump scene_4a_sapa_v1_gacerita
 
 label scene_4a_sapa_v1_cerita:
+
+    show raka normal mirror at left_terang
     r "Tadi aku ketemu seseorang."
+
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Siapa lagi.. Tuh?"
-    show mila normal at center
+
+    hide diego normal
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Coba cerita"
+
+    show raka normal mirror at left_terang
+    show mila normal at right_redup
     r "Jadi aku ketemu Nara yang anggota OSIS itu loh.."
-    z "Oh.. Kak Nara.."
+    
+    hide raka normal mirror
+    show diego normal mirror at left_terang
+    show mila normal at right_terang
+    z "Oh.. Kak Nara.." #diego sama mila
+
+    hide diego normal mirror
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "kak Nara Kenapa ?"
+
+    show raka normal mirror at left_terang
+    show mila normal at right_redup
     r "kayaknya aku tertarik deh, sama kak nara"
-    z "hah!.. Serius?!.."
+    z "hah!.. Serius?!.." #diego sama mila
+
+    show raka normal mirror at left_terang
+    show mila normal at right_redup
     r "Iya serius!... Ternyata kak nara orangnya suka baca novel, bantuin aku dong.."
+    
+    hide mila normal
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Bantuin gimana tuh?"
+
+    hide raka normal mirror
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Bantuin deketin lah, gimana sih kamu!"
+
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Hehehe."
+
+    hide mila normal mirror
+    show raka normal mirror at left_terang
+    show diego normal at right_redup
     r "Nanti aku mau ke kelas Kak Nara untuk pinjam bukunya. Kira-kira aku harus apa lagi ya?"
+
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Menurutku ya, setelah kamu baca bukunya, coba deh kamu ceritakan secara berkala ke Kak Nara. supaya, Kak Nara tahu kalau kamu benar-benar baca buku dia."
+    
+    hide raka normal mirror
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Aku setuju sama Diego, tapi, jangan terlalu gegabah. Ga semua cewek suka langsung di deketin secara berkala."
+    
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Hm.. bener juga."
+
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Emang buku apa yang dibaca sama kak Nara?"
+    
+    hide diego normal
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Nah! Bukunya itu yang sama persis kayak yang kamu baca Mil…"
+
+    show mila normal mirror at left_terang
+    show raka normal at right_redup
     m "Hah? Yang mana? Banyak loh buku yang ku baca.."
+    
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Yang kayak nama planet itu loh Mil…"
+
+    hide raka normal
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Pluto ga sih Mil? Yang kamu pajang itu."
+
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Oh astaga! Yang itu."
+
+    hide diego normal
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Nah! Pokoknya itu lah. Ceritain dong Mil itu kayak gimana…"
+
+    show mila normal mirror at left_terang
+    show raka normal at right_redup
     m "Jadi-"
+
+    hide raka normal
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Ih, waktu itu aku tanya ceritanya malah disuruh baca sendiri. Curang!"
+
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Diem dulu deh kamu Diego! Ini lagi serius!"
     m "Jadi, ceritanya tentang seorang character yang punya kekuatan super, tepatnya kekuatan menghilang. Tapi, dia sembunyikan kekuatan itu dari semua orang termasuk orang tuanya sendiri."
     m "Lalu, di suatu hari, ada temen sekelasnya yang bisa dibilang paling pintar diantara yang lain. Dia mulai curiga dengan si karakter utama ini, kalau Karakter ini punya kekuatan."
     m "Nah! dibuku edisi pertama ini, akan menceritakan hal tadi dan ternyata di dunia mereka, ga hanya pemeran utamanya yang punya kekuatan super."
+    
+    hide diego normal
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
     r "Menarik ya… pantesan aja Kak Nara suka."
     r "Siapa nama karakter utamanya Mil?"
+
+    show mila normal mirror at left_terang
+    show raka normal at right_redup
     m "Nam-"
-    d "Namanya Raya."
-    m "Dan nama karakter pintar tadi adalah Alri"
-    r "Terus, selanjutnya aku harus apa?"
-    m "Nanti kamu ke-kelas dia sepulang sekolah kan?"
-    r "Iya…"
-    m "Nanti ajak pulang bareng aja.."
-    d "setuju!"
 
     hide raka normal
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
+    d "Namanya Raya."
+
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
+    m "Dan nama karakter pintar tadi adalah Alri"
+
     hide diego normal
-    hide mila normal
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
+    r "Terus, selanjutnya aku harus apa?"
+
+    show mila normal mirror at left_terang
+    show raka normal at right_redup
+    m "Nanti kamu ke-kelas dia sepulang sekolah kan?"
+
+    show raka normal at right_terang
+    show mila normal mirror at left_redup
+    r "Iya…"
+
+    show mila normal mirror at left_terang
+    show raka normal at right_redup
+    m "Nanti ajak pulang bareng aja.."
+
+    hide raka normal
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
+    d "setuju!"
+
+    hide diego normal
+    hide mila normal mirror
 
     jump scene_5
 
 label scene_4a_sapa_v1_gacerita:
-    show mila normal at center
+    show raka normal mirror at left_terang
     r "aku tadi ke toilet dulu"
+
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Yaudah kalian mau pesen apa?"
+
+    hide mila normal
+    show diego normal at right_terang
+    show raka normal mirror at left_redup
     d "Aku ayam geprek"
+
+    show raka normal mirror at left_terang
+    show diego normal at right_redup
     r "aku samain aja deh"
+
+    hide diego normal
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Kebiasaan."
     
-    hide raka normal
+    hide raka normal mirror
     hide diego normal
     hide mila normal
 
     jump scene_5
     
 label scene_4a_sapa_v2:
+
+    show nara normal at right_terang
     n "Engga sih."
     n "Aku duluan ya."
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Oke kak."
 
-    hide raka normal
+    hide raka normal mirror
     hide nara normal
 
     jump scene_4b  
 
 label scene_4a_sapa_v3:
+
+    show nara normal at right_terang
     n "Sama siapapun itu, bukan urusan kamu!"
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Oh iya kak maaf."
+    
     hide nara normal
     n "(pergi tanpa kata kata)"
     $ nara_hearts+=-1
     
-    hide raka normal
+    hide raka normal mirror
 
     jump scene_4b
 
 label scene_4b:
     "Raka menuju kantin dimana Diego dan Mila sedang istirahat bersama."
-    show diego normal at left
+
+    show diego normal at right_terang
     d "kok lama banget sih keluarnya?"
-    show raka normal at right
+
+    show raka normal mirror at left_terang
+    show diego normal at right_redup
     r "aku tadi ke toilet dulu"
-    show mila normal at center
+
+    hide raka normal mirror
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Yaudah kalian mau pesen apa?"
+
+    show diego normal at right_terang
+    show mila normal mirror at left_redup
     d "Aku ayam geprek"
+
+    hide mila normal mirror
+    show raka normal mirror at left_terang
+    show diego normal at right_redup
     r "aku samain aja deh"
+
+    hide diego normal
+    show mila normal at right_terang
+    show raka normal mirror at left_redup
     m "Kebiasaan."
 
     hide diego normal
-    hide raka normal
+    hide raka normal mirror
     hide mila normal
 
     jump scene_6
 
 label scene_5:
     "Bell sekolah telah berbunyi, menandakan sudah tiba saatnya pulang sekolah. Sebelum bergegas pulang ke rumah, Raka menyempatkan diri mengunjungi kelas Nara untuk meminjam buku novelnya yang sudah dijanjikan."
-    show raka normal at left
+    show raka normal mirror at left_terang
     r "(Hatiku berdegup kencang, aku pun melihat jendela kelas kak Nara namun, disana aku melihat dia sedang berbicara akrab dengan satu cowo.)"
-    r "itu siapanya kak nara ya?” (Khawatir)"
-    show nara normal at right
+    r "itu siapanya kak nara ya?” (Khawatir)"    
     r "Halo. Kak Nara"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Eh- halo."
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Aku mau ambil buku yang tadi kakak pinjamkan…"
+
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Oh iya, Ini bukunya.. Jangan lupa dibaca ya…"
+
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Pasti dong kak!"
-    show arga normal at center
+
+    hide nara normal
+    show arga normal at right_terang
+    show raka normal mirror at left_redup
     a "Siapa dia Ra?"
+
+    hide raka normal mirror
+    show nara normal mirror at left_terang
+    show arga normal at right_redup
     n "Oh ini temen baruku. adik kelas kita, tadi ketemu di perpustakaan."
+
+    show arga normal at right_terang
+    show nara normal mirror at left_redup
     a "Oh temen doang."
+
+    hide nara normal mirror
+    show raka normal mirror at left_terang
+    show arga normal at right_redup
     r "(Hah? Mereka pacaran?!)"
+
+    hide arga normal
+    show nara normal at right_terang
+    show raka normal mirror at left_redup
     n "Oh iya, Raka. Kenalin ini temen aku, dia namanya Arga…"
+
+    hide raka normal mirror
+    show arga normal mirror at left_terang
+    show nara normal at right_redup
     a "Iya kenalin aku Arga. Ketua OSIS di sekolah ini."
+
+    hide nara normal
+    show raka normal at right_terang
+    show arga normal mirror at left_redup
     r "(Ternyata hanya teman. Tapi kok deket banget ya? Apa jangan-jangan si Arga ini juga suka sama Kak Nara?)"
     r "Halo kak, aku Raka dari 10 MIPA 5. Salam kenal ya!"
     r "Oh iya kak mau ke toko buk—"
-    hide raka normal
-    hide arga normal
-    show arga normal at left
+
+    show arga normal mirror at left_terang
+    show raka normal at right_redup
     a "Ra, jadi kan kita makan bareng?"
+
+    hide raka normal
+    show nara normal at right_terang
+    show arga normal mirror at left_redup
     n "Jadi dong.. Kan udah janji"
     n "Tadi kenapa Raka?"
-    hide arga normal
-    show arga normal at center
-    show raka normal at left
+    
+    hide arga normal mirror
+    show raka normal mirror at left_terang
+    show nara normal at right_redup
     r "Oh gapapa kak, gajadi"
+
+    hide nara normal
+    show arga normal at right_terang
+    show raka normal mirror at left_redup
     a "Yuk berangkat sekarang, nanti takuntya penuh"
+
+    hide raka normal mirror
+    show nara normal mirror at left_terang
+    show arga normal at right_redup
     n "Yuk! Duluan ya raka"
+
+    hide arga normal
+    show raka normal at right_terang
+    show nara normal mirror at left_redup
     r "iya kak. hati hati ya.. Oh iya, makasih juga bukunya."
+
+    show nara normal mirror at left_terang
+    show raka normal at right_redup
     n "Oh, tenang aja!"
+
+    show raka normal at right_terang
+    show nara normal mirror at left_redup
     r "(Yah, padahal tadi seru kalau pergi bareng sambil ngobrolin novel plutonya Mila.)"
 
     hide arga normal
     hide raka normal
-    hide nara normal
+    hide nara normal mirror
 
 label scene_6:
     r "Pak tunggu! Jangan ditutup gerbangnya!"

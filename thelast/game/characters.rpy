@@ -11,6 +11,8 @@ define b = Character("Ben", color="#993300")
 define rl = Character("Rilandy", color="#6666FF")
 define npc = Character("npc", color="#6666FF")
 
+define z = Character("Diego & Mila", color="#FFCC00")
+
 
 init python:
     store.character_profiles = {
@@ -82,12 +84,15 @@ image luna kaget = "images/characters/luna_kaget.png"
 image luna malu = "images/characters/luna_malu.png"
 
 image nara normal = im.Scale("characters/Nara_Normal.png", 420, 420)
+image nara normal mirror = im.Scale("characters/Nara_Normal_Mirror.png", 420, 420)
 image nara sinis = "images/characters/nara_sinis.png"
 
 image diego normal = im.Scale("characters/Diego.png", 420, 420)
+image diego normal mirror = im.Scale("characters/Diego_Mirror.png", 420, 420)
 image diego kecewa = "images/characters/diego_kecewa.png"
 
 image arga normal = im.Scale("characters/Arga.png", 420, 420)
+image arga normal mirror = im.Scale("characters/Arga_Mirror.png", 420, 420)
 
 image mila normal = im.Scale("characters/Mila.png", 420, 420)
 image mila normal mirror = im.Scale("characters/Mila_Mirror.png", 420, 420)
