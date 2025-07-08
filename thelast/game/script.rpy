@@ -102,7 +102,7 @@ label start:
     scene auditorium
     with fade
 
-    play music "bgm/videoplayback.m4a"
+    play music "bgm/outsideclass.mp3" fadein 1.0
 
     show raka normal mirror at left_terang
     with dissolve
@@ -157,10 +157,14 @@ label start:
         $ unlocked_luna = True
         call unlock_character("Luna", "Gadis ceria dan penuh semangat.", "card luna")
 
+        stop music fadeout 1.0
+
     jump scene_2
 
 label scene_2:
     scene bg_kantin_gate with fade
+
+    play music "bgm/friendstheme.mp3" fadein 1.0
 
     "Raka berjalan menuju arah kantin sekolahnya dan mencari kedua sahabatnya yang selalu bersama sejak SMP hingga saat ini."
     "Kedua sahabatnya ini sudah menjalin hubungan asmara bersama sejak SMP hingga saat ini."
@@ -375,10 +379,14 @@ label scene_2c:
 
     "Raka meninggalkan Diego dan Mila di kantin."
 
+    stop music fadeout 1.0
+
     jump scene_3
 
 label scene_3:
     scene bg class with fade  # <- Ganti ini jika punya background kelas, misal: "bg_class.jpg"
+
+    play music "bgm/onlyclass.mp3" fadein 1.0
 
     "MPLS sudah selesai. Peserta didik sudah memulai aktivitas sekolah seperti biasa. Kelas akan segera dimulai."
 
@@ -422,9 +430,11 @@ label scene_3a:
     t "Halo anak-anak maaf ibu baru datang, selamat ya..bagi kalian yang keterima di SMA harapan bangsa, di kelas ini ibu sebagai wali kelas kalian. Kenalin nama ibu, Ibu Tiffany."
 
     hide tiffany normal
+
     jump scene_4
 
 label scene_3b:
+    hide luna normal
     show raka normal mirror at left_terang
     r "Kenapa ga aku panggil aja ya tadi? Siapa tau dia notice aku."
     r "Mungkin belum saatnya. Semoga nanti masih ada kesempatan ngobrol."
@@ -451,7 +461,11 @@ label scene_4:
         "ga sapa":
             jump scene_4a_gasapa
 
+    stop music fadeout 1.0       
+
 label scene_4a_sapa:
+
+    play music "bgm/naratheme.mp3" fadein 1.0
 
     show raka normal mirror at left_terang
     r "Halo… kak Nara ya? Yang tadi di auditorium."
@@ -551,7 +565,11 @@ label scene_4a_sapa_v1:
     hide nara normal
     hide raka normal mirror
 
+    stop music fadeout 1.0
+
     "Raka menuju kantin dimana Diego dan Mila sedang istirahat bersama."
+
+    play music "bgm/friendstheme.mp3" fadein 1.0
 
     show diego normal at right_terang
     d "kok lama banget sih keluarnya?"
@@ -722,6 +740,8 @@ label scene_4a_sapa_v1_cerita:
     hide diego normal
     hide mila normal mirror
 
+    stop music fadeout 1.0
+
     jump scene_5
 
 label scene_4a_sapa_v1_gacerita:
@@ -750,6 +770,8 @@ label scene_4a_sapa_v1_gacerita:
     hide diego normal
     hide mila normal
 
+    stop music fadeout 1.0
+
     jump scene_5
     
 label scene_4a_sapa_v2:
@@ -764,6 +786,8 @@ label scene_4a_sapa_v2:
 
     hide raka normal mirror
     hide nara normal
+
+    stop music fadeout 1.0
 
     jump scene_4b  
 
@@ -782,10 +806,14 @@ label scene_4a_sapa_v3:
     
     hide raka normal mirror
 
+    stop music fadeout 1.0
+
     jump scene_4b
 
 label scene_4b:
     "Raka menuju kantin dimana Diego dan Mila sedang istirahat bersama."
+
+    play music "bgm/friendstheme.mp3" fadein 1.0
 
     show diego normal at right_terang
     d "kok lama banget sih keluarnya?"
@@ -817,10 +845,14 @@ label scene_4b:
     hide raka normal mirror
     hide mila normal
 
-    jump scene_6
+    stop music fadeout 1.0
+
+    jump scene_5
 
 label scene_5:
     "Bell sekolah telah berbunyi, menandakan sudah tiba saatnya pulang sekolah. Sebelum bergegas pulang ke rumah, Raka menyempatkan diri mengunjungi kelas Nara untuk meminjam buku novelnya yang sudah dijanjikan."
+    play music "bgm/onlyclass.mp3" fadein 1.0
+
     show raka normal mirror at left_terang
     r "(Hatiku berdegup kencang, aku pun melihat jendela kelas kak Nara namun, disana aku melihat dia sedang berbicara akrab dengan satu cowo.)"
     r "itu siapanya kak nara ya?” (Khawatir)"    
@@ -919,6 +951,10 @@ label scene_5:
     hide arga normal
     hide raka normal
     hide nara normal mirror
+
+    stop music fadeout 1.0
+
+    jump scene_6
 
 label scene_6:
     r "Pak tunggu! Jangan ditutup gerbangnya!"
