@@ -772,7 +772,19 @@ label scene_4a_sapa_v1_gacerita:
 
     stop music fadeout 1.0
 
-    jump scene_5
+    jump scene_6
+
+label scene_4a_gasapa:
+
+    show raka normal mirror at left_terang
+    r "Hmm sapa ga ya? Siapa tau dia notice aku."
+    r "Mungkin belum saatnya. nanti aja deh pas ada kesempatan ngobrol."
+    r "Saatnya aku menuju kantin Diego dan Mila pasti sudah menungguku disana."
+
+    hide raka normal mirror
+
+    jump scene_4b
+
     
 label scene_4a_sapa_v2:
 
@@ -847,7 +859,7 @@ label scene_4b:
 
     stop music fadeout 1.0
 
-    jump scene_5
+    jump scene_6
 
 label scene_5:
     "Bell sekolah telah berbunyi, menandakan sudah tiba saatnya pulang sekolah. Sebelum bergegas pulang ke rumah, Raka menyempatkan diri mengunjungi kelas Nara untuk meminjam buku novelnya yang sudah dijanjikan."
