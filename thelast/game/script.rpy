@@ -104,26 +104,49 @@ label start:
 
     play music "bgm/outsideclass.mp3" fadein 1.0
 
+    "Hari pertama masuk SMA, bagi Raka ini adalah awalan dari hidupnya yang sudah lama berhenti sejenak."
+    "Semua orang mengatakan ini adalah waktu yang tepat untuk aku menghabiskan masa mudaku.  Sepertinya Aku akan mencoba mendengarkan apa kata mereka, melakukan hal yang seharusnya aku lakukan sebagai remaja umum selayaknya siswa SMA."
+    "Aku berharap semuanya akan berjalan dengan baik dan sesuai dengan apa yang aku inginkan."
+
     show raka normal mirror at left_terang
     with dissolve
-    r "Hari ini adalah hari pertamaku masuk SMA."
-    r "Aku kepikiran deh, aku bisa ga ya cepat beradaptasi dan dapat teman baru? Hm…"
+    r "Permisi pak, mau tanya. Ruang auditorium dimana ya.."
 
-    play sound "footstep.ogg"
-
-    show luna normal at right with moveinright
     show raka normal mirror at left_redup
-    l "Hai!"
-
-    hide raka normal mirror at left
-    show raka kaget mirror at left_terang
-    show luna normal at right_redup
-    r "(kaget)"
-    r "(dalam hati) Wah! Dia siapa? Cantik banget… Ceria, penuh semangat dan ramah banget…"
+    show npc at right_terang
+    npc "Disana dek."
 
     show raka normal mirror at left_terang
+    show npc at right_redup
+    r "Terimakasih pak"
+
+    hide raka normal mirror
+    hide npc
+
+    "Raka berjalan menuju ruang auditorium."
+
+    show raka normal mirror at left_terang
+    r "Hari pertama ini sangat menegangkan ya…"
+    r "Aku kepikiran deh, aku bisa ga ya cepat beradaptasi dan dapat teman baru?"
+    r "Hmmm..." # play sfx langkah kaki
+    r "Loh? Kok aku jadi deg-deg an ya…" #play sfx detak jantung
+    hide raka normal mirror
+
+    "Luna datang menghampiri raka"
+
+    show luna normal at right_terang
+    l "Hai!"
+
+    show raka kaget mirror at left_terang
     show luna normal at right_redup
-    r "Oh! Hai?"
+    r "...."
+
+    hide raka kaget mirror
+    show raka normal mirror at left_terang
+    show luna normal at right_redup
+    r "Wah! Dia siapa? Cantik banget…" #dialog dalam hati
+    r "Aku gabisa berhenti menatapnya… dia…Ceria, penuh semangat, dan ramah banget…" #dialog dalam hati
+    r "oh! hai?"
 
     show luna normal at right_terang
     show raka normal mirror at left_redup
@@ -131,33 +154,45 @@ label start:
 
     show raka normal mirror at left_terang
     show luna normal at right_redup
-    r "Eh- boleh… aku Raka."
+    r "Eh- boleh… aku Raka"
     r "Kalau nama kamu?"
 
     show luna normal at right_terang
     show raka normal mirror at left_redup
     l "Luna! Namaku Luna…"
 
-    play sound "mic_test.ogg"
+    #play sfx testing mic
 
-    show nara normal at right
-    hide raka normal at left
-    hide luna normal at right 
-    n "Test, test, test…"
+    hide raka normal mirror
+    hide luna normal
+    show nara normal at right_terang
     n "Halo semuanya, nama saya Nara sebagai perwakilan dari OSIS."
-    n "Ada pemberitahuan, bagi peserta didik baru SMA Harapan Bangsa, di mohon untuk mencatat informasi yang tertera di mading sekolah sebagai arahan mengenai kegiatan MPLS sekolah kami."
+    n "Ada pemberitahuan, bagi peserta didik baru SMA Harapan Bangsa,"
+    n " di mohon untuk mencatat informasi yang tertera di mading sekolah sebagai arahan mengenai kegiatan MPLS sekolah kami."
 
+    #play sfx kericuhan anak-anak
+
+    hide nara normal
     show raka normal mirror at left_terang
-    hide nara normal at right
-    r "(dalam hati) Wah, kakak itu... bisa banget bawa diri. Udah keren, kalem, cantik pula. Komplit banget sih."
+    r "Eh? Dia liat ke arahku kah? Dia ngeliatin aku bukan? Apa aku terlalu percaya diri? Ahh ga mungkin lah!" #dialog dalam hati
+    r "Tapi- dia ga berhenti menatap ke arahku…" #dialog dalam hati
+
+    hide raka normal mirror
+    show nara normal at right_terang
+    n "Baik, itu saja informasi yang harus saya sampaikan. Terimakasih."
+
+    hide nara normal
+    show raka normal mirror at left_terang
+    r "Oh, ternyata benar, dia tidak melihat ke arahku. Haha, aku ini terlalu pede."
+    r "Tapi- kalau dilihat-lihat, kakak itu menarik sih. Cantik juga…"
+    hide raka normal mirror
+        #stop music fadeout 1.0
     if not unlocked_nara:
         $ unlocked_nara = True
         call unlock_character("Nara", "Anggota OSIS yang kalem dan berwibawa.", "card nara")
     if not unlocked_luna:
         $ unlocked_luna = True
         call unlock_character("Luna", "Gadis ceria dan penuh semangat.", "card luna")
-
-        stop music fadeout 1.0
 
     jump scene_2
 
@@ -166,30 +201,37 @@ label scene_2:
 
     play music "bgm/friendstheme.mp3" fadein 1.0
 
-    "Raka berjalan menuju arah kantin sekolahnya dan mencari kedua sahabatnya yang selalu bersama sejak SMP hingga saat ini."
-    "Kedua sahabatnya ini sudah menjalin hubungan asmara bersama sejak SMP hingga saat ini."
+    "Raka berjalan menuju arah kantin sekolahnya dan mencari kedua sahabatnya yang selalu bersama dengannya sejak SMP hingga saat ini."
+    "Kedua sahabat nya ini adalah sepasang kekasih yang sudah menjalin hubungan asmara sejak SMP hingga saat ini."
+    "Bagi Raka, kedua sahabatnya ini bagaikan rumah yang utuh dan selalu melindunginya. Raka sangat menyayangi kedua sahabatnya itu."
     
     play sound "shout.ogg"
 
     show diego normal at right_terang
     d "Rakaaa!"
 
-    show mila normal at right_terang
-    hide diego normal at right
+    show mila normal mirror at left_terang
+    show diego normal at right_redup
     m "Siniiii!"
 
+    hide diego normal
+    hide mila normal mirror
+
+    "Raka menghampiri Diego dan Mila"
+
     show raka normal mirror at left_terang
-    hide diego normal at right
-    hide mila normal at right
-    r "Eh- itu mereka."
+    r "Eh- itu mereka"
     r "Diegoo! Milaa!"
+    hide raka normal mirror
 
     jump scene_2a
 
 label scene_2a:
-    scene bg_kantin_table with fade
 
-    "Raka, Diego dan Mila berjalan menuju meja makan kantin untuk melanjutkan percakapan mereka."
+    scene bg_kantin_table with fade
+    "Diego dan Mila sudah berada di kantin, menunggu Raka agar dapat makan siang bersama-sama."
+    "Raka berlari menghampiri kedua sahabatnya yang berdiri di depan meja makan kantin dan menunggunya tiba."
+    "Raka, Diego dan Mila duduk di meja makan kantin dan berbincang satu sama lain."
 
     show mila normal at right_terang
     m "Gimana hari pertama kamu Raka?"
@@ -202,20 +244,21 @@ label scene_2a:
     show raka normal mirror at left_redup
     m "Ah iya? Kok gitu sih…"
 
-    hide mila normal
-    show diego normal at right_terang
-    show raka normal mirror at left_redup
+    hide raka normal mirror
+    show diego normal mirror at left_terang
+    show mila normal at right_redup
     d "Masa sih? Ga ada ketemu cewek gitu?"
 
-    hide diego normal
     show mila normal at right_terang
-    show raka normal mirror at left_redup
-    m "Diego! Apaansih."
-    hide mila normal
+    show diego normal mirror at left_redup
+    m "Diego! Apaansih." #pake emote sebel
+
+    hide diego normal mirror
     show raka normal mirror at left_terang
+    show mila normal at right_redup
     r "Eh- hehehe… Ada sih…"
 
-    hide raka normal
+    hide mila normal
     show diego normal at right_terang
     show raka normal mirror at left_redup
     d "Hah? Serius? Siapa?!"
@@ -229,29 +272,29 @@ label scene_2a:
             jump scene_2b_rahasia
 
 label scene_2b_luna:
+
     show raka normal mirror at left_terang
     show diego normal at right_redup
-    r "Tadi ada cewe rambutnya pirang, cantik banget… ramah dan ceria gitu orangnya, seolah-olah punya banyak energi seharian."
-    
-    hide diego normal 
+    r "Tadi ada cewe rambutnya pirang, cantik banget deh…"
+    r "Terus dia ramah dan ceria gitu orangnya, seolah-olah punya banyak energi seharian."
+
+    hide diego normal
     show mila normal at right_terang
     show raka normal mirror at left_redup
     m "Oh iya? Kayaknya tadi aku lihat deh, emang cantik banget tuh.."
 
-    hide mila normal
-    show diego normal at right_terang
-    show raka normal mirror at left_redup
-    d "Eh- emang ada? Kok aku ga liat sih..." 
+    hide raka normal mirror
+    show diego normal mirror at left_terang
+    show mila normal at right_redup
+    d "Eh- emang ada? Kok aku ga liat sih" #pake emote kecewa
 
-    "Diego tampak agak sedikit kecewa."
-
-    hide diego normal 
     show mila normal at right_terang
-    show raka normal mirror at left_redup
-    m "Kenapa kecewa gitu mukanya?! Dih cantik dikit langsung gitu." 
+    show diego normal mirror at left_redup
+    m "Kenapa kecewa gitu mukanya?! dih cantik dikit langsung gitu" #pake nada kesal atau emote masih kecewa
 
-    hide mila normal 
+    hide diego normal mirror
     show raka normal mirror at left_terang
+    show mila normal at right_redup
     r "Udah-udah jangan berantem, mau aku lanjutin ga nih ceritanya?"
 
     hide mila normal
@@ -259,29 +302,42 @@ label scene_2b_luna:
     show raka normal mirror at left_redup
     d "Siapa namanya?"
 
-    hide diego normal 
-    show mila normal at right_terang
-    show raka normal mirror at left_redup
-    m "Kenapa harus ditanya?" 
-    "Mila menatap Diego dengan sinis."
-
-    hide mila normal
-    show raka normal mirror at left_terang
-    r "Namanya Luna."
-
-    show diego normal at right_terang
-    show raka normal mirror at left_redup
-    d "Namanya cantik deh…"
-
     hide raka normal mirror
-    show diego normal at right_redup
     show mila normal mirror at left_terang
-    m "Ribut yuk?"
-    
+    show diego normal at right_redup
+    m "Kenapa harus ditanya?" #pake emote sinis
+
+    hide diego normal
     show raka normal at right_terang
     show mila normal mirror at left_redup
+    r "Namanya luna"
+
+    hide mila normal mirror
+    show diego normal mirror at left_terang
+    show raka normal at right_redup
+    d "Namanya cantik deh…"
+
+    hide raka normal
+    show mila normal at right_terang
+    show diego normal mirror at left_redup
+    m "Ribut yuk?" #pake muka jengkel
+
+    hide diego normal mirror
+    show raka normal mirror at left_terang
+    show mila normal at right_redup
     r "Ah sudahlah..."
-    jump scene_2c
+
+    hide raka normal mirror
+    hide mila normal
+
+    "Raka meninggalkan Diego dan Mila di kantin" #play suara langkah kaki
+    if not unlocked_diego:
+        $ unlocked_nara = True
+        call unlock_character("Diego", "(deskripsi diego)", "card diego")
+    if not unlocked_mila:
+        $ unlocked_luna = True
+        call unlock_character("MIla", "(deskripsi mila)", "card mila")
+    jump scene_3
 
 label scene_2b_nara:
 
@@ -296,7 +352,7 @@ label scene_2b_nara:
     hide raka normal mirror
     show mila normal mirror at left_terang
     show diego normal at right_redup
-    m "Merhatiin banget nih, kayakya sampai detail begitu."
+    m "Merhatiin banget nih, kayakya sampai detail begitu" #pake emote sinis
 
     show diego normal at right_terang
     show mila normal mirror at left_redup
@@ -304,8 +360,7 @@ label scene_2b_nara:
 
     show mila normal mirror at left_terang
     show diego normal at right_redup
-    m "Terserah deh." 
-    "Mila menatap Diego dengan sinis."
+    m "Terserah deh." #masih pake emote sinis
 
     hide diego normal
     show raka normal at right_terang
@@ -320,43 +375,54 @@ label scene_2b_nara:
     show mila normal mirror at left_redup
     r "Aku gatau sih belum kenalan…"
 
-    hide raka normal
-    show diego normal at right_terang
-    show mila normal mirror at left_redup
-    d "Masa gatau sih... Nama dia Nara, perwakilan dari OSIS."
+    hide mila normal mirror
+    show diego normal mirror at left_terang
+    show raka normal at right_redup
+    d "Masa gatau sih.. Nama dia Nara, perwakilan dari osis."
 
-    show mila normal mirror at left_terang
-    show diego normal at right_redup
+    hide raka normal
+    show mila normal at right_terang
+    show diego normal mirror at left_redup 
     m "Kok kamu tau sih?! Raka aja gatau, kok kamu bisa tahu?!"
 
-    show diego normal at right_terang
-    show mila normal mirror at left_redup
+    show diego normal mirror at left_terang
+    show mila normal at right_redup
     d "Kan tadi dia ngasih tau di depan. Gimana sih?"
 
-    show mila normal mirror at left_terang
-    show diego normal at right_redup
-    m "Oh iya, kan kamu merhatiin dia banget. Si paling perhatian." 
+    show mila normal at right_terang
+    show diego normal mirror at left_redup 
+    m "Oh iya, kan kamu merhatiin dia banget. Si paling perhatian." #pake muka sarkas
 
-    hide diego normal
-    show raka normal at right_terang
-    show mila normal mirror at left_redup
-    r "Ah sudahlah..."
-    jump scene_2c
+    hide diego normal mirror
+    show raka normal mirror at left_terang
+    show mila normal at right_redup
+    r "Ah sudahlah.."
+    hide raka normal mirror
+    hide mila normal
+
+    "Raka meninggalkan Diego dan Mila di kantin"#play suara langkah kaki
+    if not unlocked_diego:
+        $ unlocked_nara = True
+        call unlock_character("Diego", "(deskripsi diego)", "card diego")
+    if not unlocked_mila:
+        $ unlocked_luna = True
+        call unlock_character("MIla", "(deskripsi mila)", "card mila")
+    jump scene_3
 
 label scene_2b_rahasia:
-    
+
     show raka normal mirror at left_terang
     show diego normal at right_redup
     r "Rahasia!."
 
     show diego normal at right_terang
     show raka normal mirror at left_redup
-    d "Yah kenapa? Kasih tau dong!"
+    d "Yah kenapa? Kasih tau dong!" #pake emote kecewa
 
     hide raka normal mirror
     show mila normal mirror at left_terang
     show diego normal at right_redup
-    m "Diego apaansi. Itukan privasi dia, biarin aja. Lagi pula, kenapa sih pengen tau banget?"
+    m "Diego apaansi. Itukan privasi dia, biarin aja. Lagi pula, kenapa sih pengen tau banget?" #pake emote bete
 
     show diego normal at right_terang
     show mila normal mirror at left_redup
@@ -369,18 +435,18 @@ label scene_2b_rahasia:
     hide diego normal
     show raka normal at right_terang
     show mila normal mirror at left_redup
-    r "Ah sudahlah..."
-    jump scene_2c
+    r "Ah sudahlah.."
+    hide raka normal
+    hide mila normal mirror
 
-label scene_2c:
-    hide raka
-    hide diego
-    hide mila
+    "Raka meninggalkan Diego dan Mila di kantin" #play suara langkah kaki
 
-    "Raka meninggalkan Diego dan Mila di kantin."
-
-    stop music fadeout 1.0
-
+    if not unlocked_diego:
+        $ unlocked_nara = True
+        call unlock_character("Diego", "(deskripsi diego)", "card diego")
+    if not unlocked_mila:
+        $ unlocked_luna = True
+        call unlock_character("MIla", "(deskripsi mila)", "card mila")
     jump scene_3
 
 label scene_3:
@@ -388,18 +454,25 @@ label scene_3:
 
     play music "bgm/onlyclass.mp3" fadein 1.0
 
-    "MPLS sudah selesai. Peserta didik sudah memulai aktivitas sekolah seperti biasa. Kelas akan segera dimulai."
+    "Hari demi hari telah berlalu, Raka menjalani kegiatan awal SMA nya bersama dengan Diego dan Mila yang sudah menjadi sahabatnya selama ini."
+    "Raka berusaha beradaptasi sebisanya, hingga pada akhirnya masa MPLS telah usai."
+    "Peserta didik sudah memulai aktivitas sekolah seperti biasa. Kelas akan segera dimulai."
 
     show raka normal mirror at left_terang
+    with dissolve
     r "ini gurunya mana sih kok gaada? Telat kali ya…"
 
-    show luna normal at right_terang
-    show raka normal mirror at left_redup
-    l "(Luna berbincang dengan temannya dan ada sound effect suara percakapan)"
+    hide raka normal mirror with fade
+    show luna normal at left_terang
+    "Luna berbincang dengan temannya" #tambah sfx percakapan
 
-    show raka normal mirror at left_terang
-    show luna normal at right_redup
+    hide luna normal with fade
+    show raka kaget mirror at left_terang
     r "Eh- itu luna bukan ya?"
+
+    hide raka kaget mirror
+    show raka normal mirror at left_terang
+    r "Ternyata kita sekelas ya, hmm."
 
     menu:
         "panggil luna":
@@ -417,35 +490,52 @@ label scene_3a:
 
     show raka normal mirror at left_terang
     show luna normal at right_redup
-    r "Gapapa sih, manggil aja."
+    r "Aduh aku harus ngomong apa ya?" #ngomong didalam hati
+    r "Aku tanya sekolah lamanya aja kali ya?" #ngomong didalam hati
+    r "Eh jangan. Makanan kesukaannya? Jangan. Film kesukaannya? Jangan juga. Apa dong?" #ngomong didalam hati
+
+    show luna normal at right_terang
+    show raka normal mirror at left_redup
+    l "Raka? Halo? Kok bengong?" #pake emote bingung
+
+    show raka normal mirror at left_terang
+    show luna normal at right_redup
+    r "Eh- Gapapa sih, panggil aja."
 
     show luna normal at right_terang
     show raka normal mirror at left_redup
     l "Eh? Gitu doang...? Hehe, kirain kenapa."
-    l "Raka kenapa ya? Tiba-tiba manggil…"
+    l "Raka kenapa ya? Tiba-tiba manggil…" #dialog dalam hati, terus pake emote kayak bingung gtu
 
-    hide raka normal mirror
     hide luna normal
+    hide raka normal mirror
     show tiffany normal at right_terang
-    t "Halo anak-anak maaf ibu baru datang, selamat ya..bagi kalian yang keterima di SMA harapan bangsa, di kelas ini ibu sebagai wali kelas kalian. Kenalin nama ibu, Ibu Tiffany."
-
+    with dissolve
+    t "Halo anak-anak maaf ibu baru datang, selamat ya..bagi kalian yang keterima di SMA harapan bangsa, di kelas ini ibu sebagai wali kelas kalian."
+    t "Kenalin nama ibu, Ibu Tiffany."
     hide tiffany normal
+    $ luna_hearts+=-1
 
+    if not unlocked_tiffany:
+        $ unlocked_luna = True
+        call unlock_character("Tiffany", "(deskripsi tiffany)", "card tiffany")
     jump scene_4
 
 label scene_3b:
-    hide luna normal
     show raka normal mirror at left_terang
     r "Kenapa ga aku panggil aja ya tadi? Siapa tau dia notice aku."
     r "Mungkin belum saatnya. Semoga nanti masih ada kesempatan ngobrol."
 
-    show tiffany normal at right_terang
-    show raka normal mirror at left_redup
-    t "Halo anak-anak maaf ibu baru datang, selamat ya..bagi kalian yang keterima di SMA harapan bangsa, di kelas ini ibu sebagai wali kelas kalian. Kenalin nama ibu, Ibu Tiffany."
-
     hide raka normal mirror
+    show tiffany normal at right_terang
+    t "Halo anak-anak maaf ibu baru datang, selamat ya..bagi kalian yang keterima di SMA harapan bangsa, di kelas ini ibu sebagai wali kelas kalian."
+    t "Kenalin nama ibu, Ibu Tiffany."
+
     hide tiffany normal
 
+    if not unlocked_tiffany:
+        $ unlocked_luna = True
+        call unlock_character("Tiffany", "(deskripsi tiffany)", "card tiffany")
     jump scene_4
 
 label scene_4:
