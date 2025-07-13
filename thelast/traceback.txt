@@ -1,24 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 582, in script
-    z "Oh.. Kak Nara.." #diego sama mila
-Exception: Sayer 'z' is not defined.
+  File "game/characters.rpy", line 110, in script
+    image card luna = im.scale("images/cards/luna_card.jpg", 420, 420)
+  File "game/characters.rpy", line 110, in <module>
+    image card luna = im.scale("images/cards/luna_card.jpg", 420, 420)
+AttributeError: module 'renpy.display.im' has no attribute 'scale'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 582, in script
-    z "Oh.. Kak Nara.." #diego sama mila
-  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\ast.py", line 583, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Lenovo\Downloads\renpy-8.3.7-sdk\renpy\ast.py", line 472, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'z' is not defined.
+  File "game/characters.rpy", line 110, in script
+    image card luna = im.scale("images/cards/luna_card.jpg", 420, 420)
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 933, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/characters.rpy", line 110, in <module>
+    image card luna = im.scale("images/cards/luna_card.jpg", 420, 420)
+AttributeError: module 'renpy.display.im' has no attribute 'scale'
 
-Windows-10-10.0.22631 AMD64
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 thelast 1.0
-Tue Jul  8 03:48:11 2025
+Sun Jul 13 14:36:59 2025

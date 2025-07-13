@@ -8,7 +8,9 @@ default unlocked_mila = False
 default unlocked_tiffany = False
 default unlocked_arga = False
 
+define npc = Character("Orang Tua")  # Just in case it was missing
 
+# Screens
 screen character_card(char_name, char_desc, char_image):
     modal True
     window:
@@ -16,12 +18,12 @@ screen character_card(char_name, char_desc, char_image):
         xalign 0.5 yalign 0.5
         vbox:
             spacing 15 xalign 0.5
-            
+
             text "KARAKTER BARU TERBUKA" size 40 xalign 0.5
             add char_image xalign 0.5
             text char_name size 35 xalign 0.5
             text char_desc size 25 xalign 0.5
-            
+
             textbutton "Lanjutkan" action Return() xalign 0.5
 
 screen stats_display():
@@ -43,11 +45,12 @@ screen say(who, what):
         text what id "what"
     use stats_display
 
+# Images
 image auditorium = im.Scale("bg/auditorium.jpg", 1920, 1080)
 image bg_kantin_gate = im.Scale("bg/bg_kantin_gate.jpg", 1920, 1080)
 image bg_kantin_table = im.Scale("bg/bg_kantin_gate.jpg", 1920, 1080)
 
-# Transformasi untuk karakter kiri (pojok kiri atas dialog box)
+# Transforms
 transform left_terang:
     xpos 0.09
     ypos 1.0
@@ -64,7 +67,6 @@ transform left_redup:
     alpha 0.4
     linear 0.2 alpha 0.4
 
-# Transformasi untuk karakter kanan (pojok kanan atas dialog box)
 transform right_terang:
     xpos 0.89
     ypos 1.0
@@ -83,6 +85,33 @@ transform right_redup:
 
 define Z = Character("Diego & Mila", color="#7FB2B2")
 
+default temp_name = "Raka"
+default mc_name = "Raka"
+
+screen name_input_screen():
+    modal True
+    frame:
+        xalign 0.5
+        yalign 0.5
+        padding (30, 30)  # ✅ FIXED
+        vbox:
+            spacing 20
+            text "Masukkan nama kamu:" size 30
+            input value VariableInputValue("temp_name") length 32
+            textbutton "Lanjut" action [SetVariable("mc_name", temp_name), Jump("after_name_input")]
+
+label name_input:
+    call screen name_input_screen
+    return
+
+label after_name_input:
+    if mc_name.strip() == "":
+        $ mc_name = "Raka"
+    $ r = Character(mc_name)
+    return
+
+
+# Store character profiles
 label profile:
     $ profile_raka = store.character_profiles["Raka"]
     $ profile_luna = store.character_profiles["Luna"]
@@ -94,18 +123,22 @@ label profile:
     $ profile_Ben = store.character_profiles["Ben"]
     $ profile_Rilandy = store.character_profiles["Rilandy"]
     $ profile_npc = store.character_profiles["npc"]
+    return
 
 label unlock_character(char_name, char_desc, char_image):
     call screen character_card(char_name, char_desc, char_image)
     return
+
+
 label start:
+    call name_input
     scene auditorium
     with fade
 
     play music "bgm/outsideclass.mp3" fadein 1.0
 
-    "Hari pertama masuk SMA, bagi Raka ini adalah awalan dari hidupnya yang sudah lama berhenti sejenak."
-    "Semua orang mengatakan ini adalah waktu yang tepat untuk aku menghabiskan masa mudaku.  Sepertinya Aku akan mencoba mendengarkan apa kata mereka, melakukan hal yang seharusnya aku lakukan sebagai remaja umum selayaknya siswa SMA."
+    "Hari pertama masuk SMA, bagi [mc_name] ini adalah awalan dari hidupnya yang sudah lama berhenti sejenak."
+    "Semua orang mengatakan ini adalah waktu yang tepat untuk aku menghabiskan masa mudaku. Sepertinya Aku akan mencoba mendengarkan apa kata mereka, melakukan hal yang seharusnya aku lakukan sebagai remaja umum selayaknya siswa SMA."
     "Aku berharap semuanya akan berjalan dengan baik dan sesuai dengan apa yang aku inginkan."
 
     show raka normal mirror at left_terang
@@ -122,6 +155,7 @@ label start:
 
     hide raka normal mirror
     hide npc
+
 
     "Raka berjalan menuju ruang auditorium."
 
@@ -154,7 +188,7 @@ label start:
 
     show raka normal mirror at left_terang
     show luna normal at right_redup
-    r "Eh- boleh… aku Raka"
+    r "Eh- boleh… aku [mc_name]"
     r "Kalau nama kamu?"
 
     show luna normal at right_terang
