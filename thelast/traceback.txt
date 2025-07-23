@@ -1,26 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/characters.rpy", line 110, in script
-    image card luna = im.scale("images/cards/luna_card.jpg", 420, 420)
-  File "game/characters.rpy", line 110, in <module>
-    image card luna = im.scale("images/cards/luna_card.jpg", 420, 420)
-AttributeError: module 'renpy.display.im' has no attribute 'scale'
+  File "game/script.rpy", line 1254, in script
+    show raka at center_terang
+  File "game/script.rpy", line 1254, in <module>
+    show raka at center_terang
+NameError: name 'center_terang' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/characters.rpy", line 110, in script
-    image card luna = im.scale("images/cards/luna_card.jpg", 420, 420)
-  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 933, in execute
-    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "game/script.rpy", line 1254, in script
+    show raka at center_terang
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
+    return py_eval_bytecode(code, globals, locals)
   File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/characters.rpy", line 110, in <module>
-    image card luna = im.scale("images/cards/luna_card.jpg", 420, 420)
-AttributeError: module 'renpy.display.im' has no attribute 'scale'
+  File "game/script.rpy", line 1254, in <module>
+    show raka at center_terang
+NameError: name 'center_terang' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 thelast 1.0
-Sun Jul 13 14:36:59 2025
+Sat Jul 19 17:02:02 2025

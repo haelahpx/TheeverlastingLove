@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 226: Line is indented, but the preceding hide statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump scene_2a
-    ^
-
-File "game/script.rpy", line 432: reached end of line when expecting ':'.
-    if not unlocked_diego
-                         ^
+File "game/script.rpy", line 177: 'radius' is not a keyword argument or valid child of the frame statement.
+    radius 30     
+          ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Jul 12 02:51:45 2025
+Sat Jul 19 17:16:38 2025

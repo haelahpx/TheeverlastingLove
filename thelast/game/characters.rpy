@@ -77,6 +77,7 @@ image raka normal = im.Scale("images/characters/MC/Raka_Normal.png", 420, 420)
 image raka normal mirror = im.Scale("images/characters/MC/Raka_Normal_Mirror.png", 420, 420)
 image raka kaget = im.Scale("images/characters/MC/Raka_Kaget.png", 420, 420)
 image raka kaget mirror = im.Scale("images/characters/MC/Raka_Kaget_Mirror.png", 420, 420)
+image raka sad = im.Scale("images/characters/MC/Raka_Kaget_Mirror.png", 420, 420)
 image raka mikir = "images/characters/MC/raka_mikir.png"
 
 image luna normal = im.Scale("characters/Luna/Luna_Normal.png", 420, 420)
@@ -89,6 +90,9 @@ image nara sinis = "images/characters/Nara/nara_sinis.png"
 
 image diego normal = im.Scale("images/characters/Diego/Diego.png", 420, 420)
 image diego normal mirror = im.Scale("images/characters/Diego/Diego_Mirror.png", 420, 420)
+image diego senang = im.Scale("images/characters/Diego/Diego_Mirror.png", 420, 420)
+image diego smirk = im.Scale("images/characters/Diego/Diego_Mirror.png", 420, 420)
+image diego kesal = im.Scale("images/characters/Diego/Diego_Mirror.png", 420, 420)
 image diego kecewa = "images/characters/Diego/diego_kecewa.png"
 
 image arga normal = im.Scale("images/characters/Arga/Arga.png", 420, 420)
@@ -96,11 +100,15 @@ image arga normal mirror = im.Scale("images/characters/Arga/Arga_Mirror.png", 42
 
 image mila normal = im.Scale("images/characters//Mila/Mila.png", 420, 420)
 image mila normal mirror = im.Scale("images/characters/Mila/Mila_Mirror.png", 420, 420)
+image mila smile = im.Scale("images/characters/Mila/Mila_Mirror.png", 420, 420)
 image mila sinis = "images/characters/Mila/mila_sinis.png"
 
 image tiffany normal = im.Scale("images/characters/Tiffany/Tiffany.png", 420, 420)
+image tiffany smile = im.Scale("images/characters/Tiffany/Tiffany.png", 420, 420)
 
 image ben normal = im.Scale("images/characters/Ben/Ben.png", 420, 420)
+image ben kaget = im.Scale("images/characters/Ben/Ben.png", 420, 420)
+image ben sedih = im.Scale("images/characters/Ben/Ben.png", 420, 420)
 
 image rilandy normal = im.Scale("images/characters/Rilandy/Rilandy.png", 420, 420)
 
@@ -113,3 +121,4 @@ image card diego = "images/cards/diego_card.png"
 image card mila = "images/cards/mila_card.png"
 image card tiffany = "images/cards/tiffany_card.png"
 image card arga = "images/cards/arga_card.png"
+image card ben = "images/cards/arga_card.png"
