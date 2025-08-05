@@ -1,32 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1254, in script
-    show raka at center_terang
-  File "game/script.rpy", line 1254, in <module>
-    show raka at center_terang
-NameError: name 'center_terang' is not defined
+  File "game/script.rpy", line 1809, in script
+    show ben normal at center_redup with popin
+  File "game/script.rpy", line 1809, in <module>
+    show ben normal at center_redup with popin
+NameError: name 'popin' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1254, in script
-    show raka at center_terang
-  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "game/script.rpy", line 1809, in script
+    show ben normal at center_redup with popin
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1370, in execute
+    paired = renpy.python.py_eval(self.paired)
   File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 1254, in <module>
-    show raka at center_terang
-NameError: name 'center_terang' is not defined
+  File "game/script.rpy", line 1809, in <module>
+    show ben normal at center_redup with popin
+NameError: name 'popin' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 thelast 1.0
-Sat Jul 19 17:02:02 2025
+Mon Aug  4 23:05:48 2025

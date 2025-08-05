@@ -2474,9 +2474,375 @@ label scene_7:
             jump menemui_nara_scene7
 
 label menemui_luna_scene7:
-    "Kamu memutuskan untuk menepati janjimu pada Luna."
-    return
+    "Setelah mempertimbangkan banyak hal di dalam pikirannya, Raka akhirnya memilih untuk menepati janji-nya kepada Luna saat ini juga."
+    "Raka bergegas pergi menuju kantin, dimana itulah tempat janji temu bersama Luna."
+
+   
+    r "Hai Luna, udah nunggu lama ya?"
+    l "Hai Raka, engga kok. Aku belum lama disini."
+    r "Kamu udah pesan?"
+    l "Belum, aku nungguin kamu."
+    r "Aku pesenin ya?"
+    l "Boleh."
+    r "Luna, coba tebak aku mau pesen apa di antara menu ini?" 
+    l "Hm… Nasi goreng?"
+    r "Betul!"
+    r "{i} Padahal sebenarnya aku gatau mau pesan apa. {/i}"
+
+    show luna smirk
+    l "Haha, sudah kutebak pasti kamu mau pilih nasi goreng, aku kan pintar."
+    r "Sebentar ya, aku pesan dulu."
+    l "Iya, Raka."
+
+    "Raka pergi menuju meja pemesanan makanan kantin untuk memesan menu makanan yang sudah dipilih oleh Luna dan dirinya di kantin makanan utama."
+    "Setelah makanannya sudah siap, Raka membawanya sendiri untuk langsung di berikan kepada Luna."
+
+    
+    r "Ini dia makanannya tuan putri Luna!"
+    l "Hahaha, bisa aja kamu Raka, Makasih ya!, Aku jadi nggak enak nih."
+    r "Tenang aja Luna, anggap aja ini hadiah buat kamu yang udah mau nungguin aku tadi. Dan jadi teman dihukum lari bareng, hehe."
+
+    show raka smile 
+    r "Anggap aja ini permintaan maaf. Tapi kalau boleh jujur, aku nggak nyesel dihukum hari ini."
+
+    "Luna menghentikan suapannya, sedikit bingung"
+    l "Lho, kok gitu? Capek tahu lari keliling lapangan."
+    r "Iya capek, tapi jadi punya alasan buat ngobrol berdua sama kamu kayak sekarang. Kalau nggak dihukum, mana mungkin bisa?"
+
+    "Raka menatap Luna sekilas, lalu kembali fokus ke makanannya, sedikit salah tingkah dengan ucapannya sendiri"
+
+    show luna smile
+    l "jadi itu rencananya? Pinter juga."
+
+    "Luna melanjurkan makannya kembali."
+    l "Aku kira kamu bakal ngejauhin aku karena udah bawa sial."
+    r "Justru sebaliknya. Dibanding cuma ngobrol di kelas, kayak gini lebih seru. Aku jadi tahu kalau kamu orangnya asyik, nggak jaim."
+    l "Kamu juga, kok. Kirain pendiam, ternyata bisa ngobrol juga."
+
+    "Luna tertawa kecil"
+    l "Biasanya kan nempel terus sama dua sahabatmu itu."
+
+    show raka smile
+    r "Diego sama Mila? Iya, mereka paket lengkap dari SMP. Nanti aku kenalin, tapi siap-siap aja, mereka suka interogasi orang yang lagi deket sama aku.."
+
+    show luna shock 
+    show luna smile                           
+    l "Oh ya? Aku tunggu deh interogasinya.” (Luna menatap Raka)."
+    l "Tapi aku penasaran, kenapa kamu kelihatannya canggung gitu di kelas?"
+    r "Eh? Masa? Aku… mungkin emang nggak terlalu jago basa-basi di depan banyak orang. Lebih nyaman ngobrol personal kayak gini."
+
+    show luna smile
+    l "Baguslah, berarti aku orang yang spesial, dong?"
+
+    "Raka berusaha untuk memberanikan dirinya menatap kedua mata Luna."
+    show raka smile
+    r "Menurut kamu?" 
+    r "Makanya, hukuman dan nasi goreng ini harus sering-sering diulang kayaknya, biar ngobrolnya makin lancar."
+
+    show luna smile
+    l " Hahaha. Dasar, ada maunya."
+    r "Eh, kamu suka yang manis-manis nggak?"
+    l "Hah? Makanan manis? Ada apa Raka tiba-tiba?"
+    r "Itu lho, di kantin katanya ada ice cream. Tadi rame banget. Kamu mau ga?"
+
+    show luna smile
+    l "“Wah, serius? boleh."
+    r "Oke, sebentar ya, aku beli dulu kamu tunggu disini aja."
+
+    "Raka menuju kantin yang menjual es krim."
+    "Di sebelah kantin es krim terdapat kantin makanan berat yang mayoritas menunya untuk menu sarapan."
+
+    r "{i}Eh...{/i}"
+    r "{I}Itu bukannya kak arga ya?.. Kok dia beli bubur jam segini.{/i}"
+    r "Kak Arga?"
+
+    "Arga menoleh ke arah Raka yang berdiri tepat di belakangnya. Tatapannya yang dingin dan sadis, seolah-olah menyerang Raka dengan bilah yang tajam."
+
+    a "Raka."
+
+    "Suara Arga yang dingin dan tajam memanggil nama Raka, membuat Raka semakin takut akan keberadaan Arga disaat ini."
+
+    r "Iya kak. Kakak beli bubur? Buat kak Nara ya? Gimana keadaan dia, kak?"
+
+    "Senyuman tipis yang memilki arti tajam di dalamnya, dilemparkan langsung oleh Arga kepada Raka."
+    
+    show arga mad
+    a "Oh, lu masih inget Nara ternyata. Kirain udah lupa."
+
+    show raka shock
+    r "Maksudnya, kak?"
+
+    "Arga melirik sekilas ke arah meja Luna, lalu kembali menatap Raka dengan ekspresi yang berkata bahwa Raka menjijikan."
+
+    show arga sinis
+    a "Enggak. Gua cuma heran aja. Bisa secepat itu ganti prioritas."
+
+    show raka sad
+    r "Aku tadi mau ke UKS untuk jenguk Nara dan minta maaf secara langsung, tapi…"
+
+    show arga mad
+    a "Tapi ada janji yang lebih penting, kan?” (Arga memotong ucapan Raka)."
+    a "Nara di UKS, Katanya kena bola kenceng banget. Aneh ya, pemainnya bisa seceroboh itu."
+
+    show raka sad
+    r "Itu aku kak, aku bener-bener gak sengaja... Aku mau minta maaf."
+
+    show arga sad
+    a "Minta maaf ke gua? Nggak salah nih? Harusnya lu di sana, bukan di sini makan sama orang lain."
+
+    "Nada bicara Arga yang sangat tenang namun tersimpan amarah yang sangat mendalam pada setiap kata yang ia keluarkan."
+
+    a "Nara itu orangnya nggak suka ngeluh. Walaupun sakit, dia pasti bilang ‘nggak apa-apa’. Tapi orang yang peduli beneran, pasti tahu kalau dia lagi nggak baik-baik aja tanpa harus dia ngomong."
+
+    "Raka merasa sangat bersalah dan menyesali apa yang telah dia perbuat."
+
+    show raka sad
+    r "Aku…"
+    a "Udahlah, gua duluan ya. Ada yang harus diurus. Lebih penting dibandingkan melanjutkan percakapan ga jelas ini."
+
+    "Arga berjalan melewati Raka, berhenti sejenak di sampingnya, lalu membalikkan tubuh menghadap Raka."
+
+    a "Lain kali, kalau mau sok peduli, pastiin topengmu lebih meyakinkan."
+
+    jump end_chapter1
+
+
 
 label menemui_nara_scene7:
-    "Kamu merasa bertanggung jawab dan memutuskan untuk memeriksa keadaan Nara di UKS."
-    return
+    "Di sore hari ini, dimana hampir seluruh siswa sudah tidak ada lagi di sekolah. Pintu UKS sedikit terbuka. Raka melihat Nara duduk di tepi kasur."
+    "Wajah Nara pucat pasi, tubuhnya terlihat sangat lemas dan lemah. Sementara seorang petugas PMR baru saja selesai mengompres perut Nara."
+
+    "*tok tok tok*"
+    "Raka mengetuk pintu ruang UKS. "
+
+    r "Permisi…"
+
+    "Nara mendengar suara ketukan pintu langsung melihat kearah pintu dan menunggu siapa yang hendak datang ke UKS di jam sore ini."
+
+    n "Raka? Kamu ngapain di sini?"
+
+    n "Raka berjalan menghampiri kasur UKS dimana Nara terbaring di atasnya."
+
+    r "Itu… Kak, aku mau minta maaf. Soal bola basket tadi. Itu salahku, aku bener-bener tidak sengaja. Maaf, ya."
+
+    show nara normal
+    n "*menghela napas*"
+
+    "Nara tersenyum tipis setelah mendengar pengakuan dari Raka."
+
+    n "“Aku gapapa. Namanya juga kecelakaan. Aku juga salah, jalan di pinggir lapangan tapi nggak merhatiin."
+
+    r "Tapi perut kakak jadi sakit gitu. Pasti sakit banget, ya? Muka kakak pucat."
+    
+    "Raka menunjuk ke arah perut Nara dengan tatapan dan nadanya tulus dipenuhi rasa khawatir."
+
+    "Nara terkejut dengan pernyataan Raka. Raka menunjukan sisi perhatiannya yang membuat Nara menjadi lebih luluh terhadap Raka."
+
+    show nara shock
+    n "Heh… kelihatan banget, ya? Cuma nyeri sedikit, kok. Nggak usah khawatir."
+    r "Jangan bilang nggak apa-apa. Aku jadi makin merasa bersalah."
+
+    "Nara terdiam sejenak dan terkejut menatap Raka yang terlihat tulus ."
+
+    show nara shy
+    n "Yaudah, iya, ini nyeri. Puas?"
+
+    "Nara berbicara dengan nada datar, tapi ada sedikit senyum tipis di bibirnya."
+    "Raka merasa sedikit lebih lega karena Nara yang mau berbicara jujur kepadanya."
+
+    r "Nah, gitu. Kakak butuh sesuatu? Mau aku beliin minuman hangat atau roti? Biar ada tenaga."
+    n "Nggak usah, nanti malah merepotkan."
+    r "“Nggak ada yang direpotin, kak. Anggap aja ini bagian dari permintaan maafku."
+
+    "Tatapan Nara seketika terpaku kepada wajah Raka dan menatap kedua matanya dengan lekat."
+
+    n "Yaudah. Air mineral aja cukup."
+    r "“Oke, siap! Tunggu sebentar, ya, kak!"
+    
+    "Raka bergegas keluar untuk membeli air mineral dan kembali dalam beberapa menit."
+    "Raka memberikan air mineral yang tadi ia beli kepada Nara."
+
+    r "Ini, kak."
+    n "Terimakasih banyak ya Raka, aku jadi ngerepotin kamu."
+
+    show raka sad
+    r "Jangan berterima kasih sama aku kak, ini memang seharusnya aku lakukan, bahkan ini tidak bisa mengembalikan kondisi kaka ke awal kan?"
+    n "Kenapa kamu berpikir begitu?"
+    r "Aku cuma mau Kak Nara baik-baik saja… aku jadi sedih kalau Kak Nara kenapa-kenapa."
+    n "Hahaha, kamu lucu banget Raka! Makasih banyak ya! Aku jadi bisa ketawa lagi."
+    r "Sama-sama, kak! Aku senang deh lihat Kak Nara bisa ketawa lagi."
+
+    "Suasana hening seketika, Nara memberhentikan percakapannya kepada Raka."
+    "Raka mencoba mencari topik lain untuk dibicarakan bersama Nara agar suasana tidak menjadi canggung dan kembali cair."
+
+    r "Oh iya, kak…"
+    n "Hm?"
+    r "Soal novel Pluto yang kakak bilang di perpustakaan waktu itu…"
+
+    show nara confuse
+    n "Kenapa dengan novel itu?"
+    r "Aku… semalam udah baca sebagian. Ternyata seru banget. Tentang cewek bernama Raya yang punya kekuatan menghilang itu, kan?"
+
+    show nara smile
+    n "Wah, kamu beneran baca? Aku kira kamu cuma basa-basi waktu itu."
+
+    "Raka merasa sangat senang dan lega melihat Kak Nara yang semakin terbuka dan dekat dengannya."
+    "Raka tidak tahu harus berkata apa dan bagaimana cara mengekspresikan perasaan bahagianya ini. Ia tetap melanjutkan percakapannya dengan Nara."
+
+    show raka smile
+    r "Beneran, kak. Aku jadi penasaran, gimana si Alri, cowok pintar itu, bisa curiga sama kekuatannya Raya?"
+    n "Nah, itu bagian menariknya! Alri itu tipe pengamat. Dia peka sama detail-detail kecil yang sering dilewatkan orang lain. Dia sadar kalau Raya sering ‘hilang’ di momen-momen krusial. Buat dia, itu bukan kebetulan."
+    r "Wah… keren. Berarti dia karakter yang cerdas banget, ya."
+    n "Iya! Sangat cerdas! Makanya aku suka. Karakternya tidak dangkal. Kamu harus baca sampai akhir buku pertama, ada plot twist yang bagus."
+    r "Serius, Kak? Jadi makin penasaran! Nanti aku lanjutin, deh."
+    n "Ohiya, panggil aku Nara aja!"
+    r "gapapa nih kak?"
+    n "Ya, tentu saja! Aku dengan senang hati!"
+
+    "Raka dan Nara terus berbincang tentang novel itu."
+    "Raka begitu terhanyut melihat sisi lain Nara yang bersemangat dan terbuka, sementara Nara senang menemukan teman bicara yang nyambung dan menyenangkan. Keduanya benar-benar lupa waktu dan situasi yang ada. "
+
+    # ganti background ke lorong sekolah
+
+    "Dengan senyum yang masih tersisa di wajahnya, Raka melangkah keluar dari ruang UKS. Langkahnya ringan, seolah beban yang tadi sempat menghimpit dadanya perlahan mulai menguap. Udara sore terasa lebih hangat dari biasanya, dan cahaya matahari yang menembus sela-sela daun tampak lebih bersahabat."
+
+    "Pikirannya masih dipenuhi oleh percakapan serunya dengan Nara tawa mereka yang spontan, tatapan mata Nara yang sesekali mencuri perhatiannya, dan caranya berbicara yang terasa begitu dekat, begitu tulus. Entah mengapa, semua itu meninggalkan jejak yang sulit diabaikan."
+
+    r "{i}Wah, Nara ternyata asyik banget kalau diajak ngobrolin novel. Senyumnya juga… manis banget. Aku harus cepat-cepat selesaikan baca novelnya biar bisa ngobrol lagi sama dia.{/i}"
+    r "Aku masih tidak sangka bisa jadi sedekat ini dengan Nara…"
+
+    "Raka berjalan santai di koridor yang mulai sepi karena jam istirahat akan segera berakhir. Tiba-tiba, langkahnya terhenti saat seseorang muncul dari balik pilar dan berdiri tepat di hadapannya."
+
+    show raka kaget
+    r "Ben? Lo ngapain di sini?"
+
+    show ben mad 
+    b "Nungguin lo."
+
+    show raka confuse
+    r "Nungguin gue? Kenapa? Ada perlu?"
+
+    "Senyum Ben yang mengerenyit tipis seperti mengetahui hal buruk apa yang sudah terjadi di depan matanya."
+
+    show ben mad
+    b "Seneng banget kelihatannya muka lo. Lancar urusannya di dalam ruang UKS itu?"
+
+    show raka confuse
+    r "Maksud lo? Gue dari UKS. Nemenin Kak Nara, tadi ada kecelakaan."
+
+    show ben mad
+    b "Oh, gue tahu. Lo nemenin Kak Nara."
+    b "Pasti penting banget, ya, urusannya? Sampai ada orang lain yang lo lupain gitu aja."
+
+    "Kata-kata terakhir Ben terasa seperti tamparan. Pikiran Raka yang tadinya dipenuhi Nara, seketika kosong, lalu sebuah nama dan sebuah janji muncul dengan kilatan rasa ngeri."
+
+    show raka kaget
+    r "Luna…"
+
+    "Suara Raka terhentak perlahan dan nyaris tidak terdengar."
+    "Raka terkejut dengan apa yang barus aja dia ingat dalam pikirannya, yaitu Luna."
+
+    show ben mad
+    b "Nah, akhirnya lo inget juga. Gue kira kapasitas otak lo cuma cukup buat satu cewek."
+
+    "Nada bicara Ben penuh dengan hinaan."
+
+    show raka sad
+    r "Di… di mana dia sekarang? Dia di mana, Ben?"
+
+    show ben kaget
+    b "Nyariin dia sekarang? Terlambat."
+    b "Dia udah pulang."
+
+    show raka kaget
+    r "Pulang?!"
+
+    show ben mad
+    b "Iya. Setelah nungguin lo di kantin sendirian lebih dari setengah jam."
+    b "Gue lihat dia di sana, duduk sambil ngeliatin jalan masuk kantin. Gue ajak makan, dia nolak. Katanya, ‘Aku udah janji sama Raka"
+
+    "Setiap kalimat yang keluar dari mulut Ben terasa seperti tusukan bilah tajam yang menghantam hati Raka disaat yang bersamaan."
+
+    show raka sad
+    r "Aku… aku bener-bener lupa, Ben…"
+
+    show ben mad
+    b "Tentu aja lo lupa."
+    b "Dia nunggu sampai bel mau bunyi, sampai akhirnya dia sadar kalau orang yang dia tunggu nggak akan pernah datang. Lo tahu gimana ekspresi kecewanya? Gue yakin lo nggak akan mau lihat."
+    b "Dia pergi sambil nunduk. Dan itu semua gara-gara lo."
+
+    # *deg* (bgm panik/takut and deg deg an)
+
+    show raka sad
+    r "Terus, gimana caranya gua minta maaf ke dia? Gua harus minta maaf…"
+
+    show ben mad
+    b "Nggak usah!"
+
+    "Ben memotong ucapan Raka dengan nadanya yang tinggi itu."
+
+    show ben mad
+    b "Gua yang nungguin lo disini cuma mau bilang satu hal. Jauhin Luna! Apapun alasannya!"
+
+
+    show raka kaget
+    r "Apa?!"
+
+    show ben mad
+    b "Dia cewek yang terlalu baik buat dijadikan pilihan kedua sama orang plin-plan kayak lo. Hari ini lo udah buktiin kalau janji lo itu nggak ada harganya."
+
+    "Ben menatap Raka lurus ke mata, tatapannya penuh peringatan."
+
+    b "Jadi, dengerin gue baik-baik. Sekali lagi lo bikin dia kecewa, yang lo hadapin bukan lagi cuma kata-kata dari gue."
+
+    "Setelah mengatakan itu, Ben dengan sengaja menabrak bahu Raka cukup keras saat ia berjalan melewatinya. Ia pergi tanpa menoleh lagi."
+
+    "Raka terdiam mematung di tengah koridor yang sepi. Tidak ada Luna untuk dimintai maaf. Tidak ada siapa-siapa. Hanya ada dirinya dan rasa bersalah yang begitu besar, membayangkan kekecewaan Luna yang bahkan tidak sempat ia lihat dengan mata kepalanya sendiri."
+
+    jump end_chapter1
+
+label end_chapter1
+    "Raka terdiam dan merenung. Ia tidak tahu lagi harus melakukan apa. Dalam kebingungannya, Raka berpikir untuk menghubungi Diego dan Mila untuk meminta saran dan solusi."
+    
+    "Namun, terbesit di pikirannya sebuah rasa ragu karena ia merasa seperti anak kecil yang selalu bergantung pada kedua kakaknya setiap kali keadaan menjadi sulit. Sebuah perasaan malu perlahan menyelip di dadanya."
+
+    "Ia menatap layar ponselnya yang masih menyala, nama Diego dan Mila terpampang jelas di daftar kontak. Jari-jarinya sempat bergerak, tapi berhenti di tengah jalan."
+
+    show raka sad
+    r "Sampai kapan aku akan begini terus?"
+
+    show raka mad
+    r "Aku harus menyelesaikan masalah ini sendiri! Ini masalah yang kuperbuat sendiri, jadi harus aku yang menyelesaikannya sendiri"
+
+    show raka sad
+    r "Aku sangat membutuhkan Diego dan Mila, tapi… kali ini akan aku hadapi sendiri."
+
+    show raka confuse
+    r "Nara atau Luna? Itu adalah pilihanku sendiri, tanpa campur tangan siapa pun, bahkan jika itu adalah Mila dan Diego."
+
+    show raka mad
+    r "“Siapa dan bagaimana akhirnya, akan aku tentukan sendiri, nanti…"
+
+    "Perasaan Raka bercampur menjadi satu dan tidak karuan. Tak ada satupun orang yang dapat membantu permasalahan Raka saat ini."
+
+    "Raka menginjakan telapak kakinya dan melangkah perlahan keluar sekolah."
+
+    "*dug!*" #(bgm suara jatuh)
+
+    show raka confuse
+    r "Eh? Suara apa itu?" #ganti lagu jadi lagu romantis
+    c "Raka! Aku di sebelah sini"
+
+    "Raka melihat sekeliling mencari sumber suara yang memanggil namanya itu."
+
+    c "Raka! Ini aku! Tidakkah kamu ingat?"
+
+    "Raka menoleh kearah kanan dari jalan yang sedang ia lewati. Lalu-"
+
+    "*dug*" # (bgm suara dentuman ringan)
+
+    c "Aku sangat merindukan kamu Raka! Kamu kemana saja?"
+    b "Cal- Callista?!"
+
+    "Dengan cepat Callista berlari dan memeluk Raka dengan sangat erat."
+

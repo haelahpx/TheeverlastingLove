@@ -1,36 +1,37 @@
-2025-07-22 08:29:34 UTC
+2025-08-04 16:01:42 UTC
 Windows-10-10.0.26100
 Ren'Py 8.3.7.25031702
 
-Early init took 0.06s
-Loading error handling took 0.03s
-Loading script took 0.14s
-Loading save slot metadata took 0.04s
+Early init took 0.14s
+Loading error handling took 0.13s
+Loading script took 0.73s
+Loading save slot metadata took 0.43s
 Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
+Running init code took 0.22s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
+Reloading save slot metadata took 0.28s
 Index archives took 0.00s
-Dump and make backups took 0.04s
+Backing up script files to 'C:\\Users\\haikal\\AppData\\Roaming/RenPy/backups\\thelast':
+Dump and make backups took 0.10s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.04s
+Initial gc took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.35s
+Creating interface object took 0.59s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.05s
+Load screen analysis took 0.03s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.11s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.04s
 Running _start took 0.00s
-Interface start took 1.43s
+Interface start took 1.87s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -44,3 +45,23 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1057) drawable=(1920, 1057)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 1809, in script
+    show ben normal at center_redup with popin
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\ast.py", line 1370, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\haikal\Downloads\Software\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 1809, in <module>
+    show ben normal at center_redup with popin
+NameError: name 'popin' is not defined
+
+While running game code:
+  File "game/script.rpy", line 1809, in script
+    show ben normal at center_redup with popin
+  File "game/script.rpy", line 1809, in <module>
+    show ben normal at center_redup with popin
+NameError: name 'popin' is not defined
