@@ -2840,9 +2840,88 @@ label end_chapter1
     "Raka menoleh kearah kanan dari jalan yang sedang ia lewati. Lalu-"
 
     "*dug*" # (bgm suara dentuman ringan)
+    "Dengan cepat Callista berlari dan memeluk Raka dengan sangat erat."
+
 
     c "Aku sangat merindukan kamu Raka! Kamu kemana saja?"
     b "Cal- Callista?!"
 
-    "Dengan cepat Callista berlari dan memeluk Raka dengan sangat erat."
+    "Raka terpaku. Tubuhnya seolah membeku dalam pelukan yang lama dirindukan, tapi tak pernah ia duga akan terjadi hari ini."
 
+    show raka shock
+    r "Ca- Callista…?!"
+
+    show callista sad
+    c "Sudah dua tahun… dan kamu sama sekali tidak berubah."
+
+    "Pelukan itu begitu hangat. Terlalu familiar. Tapi justru karena itu, Raka merasa hatinya kacau."
+
+    show raka sad
+    r "{i}…kenapa sekarang? Saat aku justru sedang mencoba mengenal Nara… dan Luna… {/i}"
+
+    show raka confuse
+    r "{i}Perasaan ini… kenapa seperti ditarik kembali ke masa lalu?{/i}"
+
+    "Callista melepaskan pelukannya perlahan, mendengak keatas dan menatap wajah Raka dengan senyum tipis yang penuh rindu."
+
+    show callista salting
+    c "Maaf, kalau aku tiba-tiba muncul seperti ini. Aku tahu, mungkin waktunya tidak tepat."
+
+    "Raka menunduk. Suaranya tercekat. Ia ingin bicara, tapi hatinya menolak memilih kata."
+
+    show raka nervous
+    r "Tidak… aku cuma... kaget."
+
+    show callista sad
+    c "Boleh aku ikut jalan sebentar? Seperti dulu… saat kita pulang bareng dari sekolah."
+
+    "Raka mengangguk pelan. Keduanya berjalan menyusuri jalan kecil yang mulai sepi, langkah mereka lambat dan ragu."
+
+    show bg sunset_road with fade
+
+    show raka sad
+    r "{i}Kenapa hati ini terasa asing... padahal orang di sebelahku begitu akrab?{/i}"
+
+    show raka sad
+    r "{i}Nara yang selalu membuatku tertantang... Luna yang hangat dan mengerti semua sisi diriku... dan sekarang Callista... yang datang dengan kenangan tak tergantikan.{/i}"
+
+    show callista smile
+    c "Kamu masih suka diam sambil mikir sendiri, ya?"
+
+    show raka salting
+    r "Hah… iya. Maaf. Banyak yang ada di kepala."
+
+    show callista shy
+    c "Boleh aku tahu… apakah di antara semua itu… ada aku?"
+
+    "Raka terdiam. Pertanyaan itu sederhana, tapi menohok. Ia menatap langit yang mulai gelap."
+
+    show raka normal
+    r "Callista… kehadiranmu sekarang membangunkan sesuatu yang sudah lama aku coba hilangkan. Tapi aku juga sedang… mencoba mengenal orang lain."
+
+    show callista sad
+    c "Ah.. siapa orang beruntung itu?"
+
+    show raka surprise
+    r "Kamu tidak perlu tahu?"
+
+    show callista sad
+    c "Aku bodoh! Kau benar Raka, untuk apa aku tahu bukan? memangnya aku siapa kamu?" 
+
+    "Raka menelan ludah. Ada desir sakit di dadanya, bukan karena kehadiran Callista… tapi karena ia tak bisa menjawabnya dengan jujur, bahkan pada dirinya sendiri."
+
+    show raka sad
+    r "Aku… belum tahu, Callista. Aku benar-benar bingung."
+
+    show callista smile
+    c "Kalau begitu… aku akan sabar menunggu. Bukan sebagai masa lalu… tapi sebagai kemungkinan."
+
+    "Keduanya berhenti melangkah. Angin sore menyapu wajah mereka."
+    
+    "Raka mengalihkan wajahnya dan menatap Callista."
+
+    "Mata Callista yang berbinar indah, seperti memberikan harapan baru bagi mereka untuk bisa memulai semuanya dari awal. Namun-"
+
+    "Raka tersadar, semuanya tak lagi sama... Kehadiran Nara dan Luna lah yang sekarang membuat hidupnya menjadi lebih berwarna."
+
+    "Apakah Callista juga akan menambahkan warna baru di dalam hidup Raka?"
