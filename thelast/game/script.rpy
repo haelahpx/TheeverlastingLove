@@ -2801,7 +2801,8 @@ label menemui_nara_scene7:
 
     jump end_chapter1
 
-label end_chapter1
+
+label end_chapter1: 
     "Raka terdiam dan merenung. Ia tidak tahu lagi harus melakukan apa. Dalam kebingungannya, Raka berpikir untuk menghubungi Diego dan Mila untuk meminta saran dan solusi."
     
     "Namun, terbesit di pikirannya sebuah rasa ragu karena ia merasa seperti anak kecil yang selalu bergantung pada kedua kakaknya setiap kali keadaan menjadi sulit. Sebuah perasaan malu perlahan menyelip di dadanya."

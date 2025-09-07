@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 177: 'radius' is not a keyword argument or valid child of the frame statement.
-    radius 30     
-          ^
+File "game/script.rpy", line 2804: expected ':' not found.
+    label end_chapter1
+                      ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Jul 19 17:16:38 2025
+Sun Sep  7 14:38:29 2025
