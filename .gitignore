@@ -1,0 +1,14 @@
+# Ren'Py compiled and archive files
+*.rpyc
+*.rpymc
+*.rpa
+
+# Runtime data
+/cache/
+/saves/
+/logs/
+/persistent
+
+# OS cruft
+.DS_Store
+Thumbs.db
